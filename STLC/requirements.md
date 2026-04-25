@@ -1,7 +1,8 @@
 
 # [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128)
 
-## [The software - Grocerymate](https://grocerymate.masterschool.com/auth)
+## [The software - Grocerymate <img width="2000" height="727" alt="image" src="https://github.com/user-attachments/assets/0461d1cd-3a18-4dda-b6a1-2781c17703b2" />
+](https://grocerymate.masterschool.com/auth)
 The webshop has the following basic functionalities:
 
 - Register and login functionality
