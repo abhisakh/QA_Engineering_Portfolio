@@ -1,18 +1,15 @@
 
-# 👉 [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128)
+# 🛒 GroceryMate — Feature Requirements
 
-## 👉 [Open grocerymate App](https://grocerymate.masterschool.com/)
+> 📋 [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128) &nbsp;|&nbsp; 🌐 [Open GroceryMate App](https://grocerymate.masterschool.com/)
+
+---
 
 <p align="center">
   <a href="https://grocerymate.masterschool.com/auth">
     <img src="https://github.com/user-attachments/assets/0461d1cd-3a18-4dda-b6a1-2781c17703b2" width="600"/>
   </a>
 </p>
-
----
-# 🛒 GroceryMate — Feature Requirements
-
-> 📋 [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128) &nbsp;|&nbsp; 🌐 [Open GroceryMate App](https://grocerymate.masterschool.com/)
 
 ---
 
@@ -22,26 +19,26 @@ The webshop includes the following core functionalities:
 
 | Feature | Link |
 |---|---|
-| 🔐 Register & Login | [/auth](https://grocerymate.masterschool.com/auth) |
-| 🔍 Search, Sort & Browse Categories | [/store](https://grocerymate.masterschool.com/store) |
-| ❤️ Add Products to Favorites | [/store/favs](https://grocerymate.masterschool.com/store/favs) |
-| 🧺 Add Products to Basket | [/store](https://grocerymate.masterschool.com/store) |
-| 💳 Checkout (Billing, Shipping, Payment) | [/checkout](https://grocerymate.masterschool.com/checkout) |
+| Register & Login | [/auth](https://grocerymate.masterschool.com/auth) |
+| Search, Sort & Browse Categories | [/store](https://grocerymate.masterschool.com/store) |
+| Add Products to Favorites | [/store/favs](https://grocerymate.masterschool.com/store/favs) |
+| Add Products to Basket | [/store](https://grocerymate.masterschool.com/store) |
+| Checkout (Billing, Shipping, Payment) | [/checkout](https://grocerymate.masterschool.com/checkout) |
 
 ---
 
-## ✨ New Features
+## New Features
 
 ---
 
-### 1. ⭐ Product Rating System
+### 1. Product Rating System
 
 **Vague Requirement**
 > Users should be able to rate products with a 5-star system and have the option to add written feedback.
 
 ---
 
-#### ❓ Questions
+#### Questions
 
 1. Can a user rate a product multiple times, or only once per account?
 2. Are ratings allowed only after purchasing the product, or for any user?
@@ -52,7 +49,7 @@ The webshop includes the following core functionalities:
 
 ---
 
-#### ✅ Detailed Requirements
+#### Detailed Requirements
 
 1. Users can rate products from **1 to 5 stars**.
 2. Each user can submit **only one rating** per product.
@@ -63,14 +60,14 @@ The webshop includes the following core functionalities:
 
 ---
 
-### 2. 🔞 Age Verification for Alcoholic Products
+### 2. Age Verification for Alcoholic Products
 
 **Vague Requirement**
 > Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
 
 ---
 
-#### ❓ Questions
+#### Questions
 
 1. What happens if the user enters an age below 18?
 2. Is the age verification required every time or only once per session/account?
@@ -81,7 +78,7 @@ The webshop includes the following core functionalities:
 
 ---
 
-#### ✅ Detailed Requirements
+#### Detailed Requirements
 
 1. A **modal appears** when accessing alcoholic products.
 2. Users must enter their **age** (numeric input).
@@ -92,14 +89,14 @@ The webshop includes the following core functionalities:
 
 ---
 
-### 3. 🚚 Shipping Cost Changes
+### 3. Shipping Cost Changes
 
 **Vague Requirement**
 > Free shipping for orders above a certain amount. Orders below this amount will incur a shipping fee.
 
 ---
 
-#### ❓ Questions
+#### Questions
 
 1. What is the exact threshold for free shipping?
 2. Does the threshold include taxes and discounts or only product price?
@@ -110,7 +107,7 @@ The webshop includes the following core functionalities:
 
 ---
 
-#### ✅ Detailed Requirements
+#### Detailed Requirements
 
 1. **Free shipping** applies for orders above €X (e.g., €50).
 2. Orders below €X incur a **fixed shipping fee** (e.g., €5).
