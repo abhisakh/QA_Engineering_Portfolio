@@ -1,7 +1,7 @@
 
 # [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128)
 
-## [The Software – grocerymate](https://grocerymate.masterschool.com/auth)
+## 👉 [Open grocerymate App](https://grocerymate.masterschool.com/auth)
 
 <p align="center">
   <a href="https://grocerymate.masterschool.com/auth">
