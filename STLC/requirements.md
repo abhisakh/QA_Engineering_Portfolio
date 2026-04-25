@@ -27,7 +27,7 @@ The webshop has the following basic functionalities:
 Users should be able to rate products with a 5-star system and have the option to add written feedback.
 
 **Questions:**  
-\* **1.** Can a user rate a product multiple times, or only once per account?  
+\--- **1.** Can a user rate a product multiple times, or only once per account?  
 --- **2.** Are ratings allowed only after purchasing the product, or for any user?  
 --- **3.** What is the maximum/minimum length for written feedback?  
 --- **4.** Can users edit or delete their rating after submitting it?  
