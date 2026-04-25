@@ -1,7 +1,7 @@
 
 # [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128)
 
-## 👉 [Open grocerymate App](https://grocerymate.masterschool.com/auth)
+## 👉 [Open grocerymate App](https://grocerymate.masterschool.com/)
 
 <p align="center">
   <a href="https://grocerymate.masterschool.com/auth">
@@ -13,11 +13,11 @@
 
 The webshop has the following basic functionalities:
 
-- Register and login functionality
-- Searching for products, sorting on price, categories of products
-- Add products to favorites
-- Add products to basket
-- Check-out process: billing and sending information in a form, choose payment method. Calculation of costs (calculate total price)
+- [Register and login functionality](https://grocerymate.masterschool.com/auth)
+- [Searching for products, sorting on price, categories of products](https://grocerymate.masterschool.com/store)
+- [Add products to favorites](https://grocerymate.masterschool.com/store/favs)
+- [Add products to basket](https://grocerymate.masterschool.com/store)
+- [Check-out process: billing and sending information in a form, choose payment method. Calculation of costs (calculate total price)](https://grocerymate.masterschool.com/checkout)
 
 ## New features
 
