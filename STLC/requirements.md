@@ -22,30 +22,31 @@ The webshop has the following basic functionalities:
 ## New features
 
 ### **1. Product Rating System**
-**Vague Requirement:**\
-**Requirement:**\ 
+**Vague Requirement:**  
+**Requirement:**  
 Users should be able to rate products with a 5-star system and have the option to add written feedback.
 
-**Questions:**\
+**Questions:**  
 
-**Detailed Requirement:**\
+**Detailed Requirement:**  
 
-### **2. Age Verification for Alcoholic Products**\
-**Vague Requirement:**\
-**Requirement:** \
+### **2. Age Verification for Alcoholic Products**  
+**Vague Requirement:**  
+**Requirement:**   
 Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
 
-**Questions:**\
+**Questions:**  
 
-**Detailed Requirement:**\
+**Detailed Requirement:**  
 
-### **3. Shipping Cost Changes**\
-**Vague Requirement:**\
-**Requirement:**\
+### **3. Shipping Cost Changes**  
+**Vague Requirement:**  
+**Requirement:**  
 Free shipping for orders above a certain amount. Orders below this amount will incur a shipping fee.
 
-**Questions:**\
+**Questions:**  
 
-**Detailed Requirement:**\
+**Detailed Requirement:**  
+
 
 
