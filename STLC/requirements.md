@@ -1,13 +1,15 @@
 
 # [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128)
 
-## [The Software – grocerymate]("https://grocerymate.masterschool.com/auth")
+## [The Software – grocerymate](https://grocerymate.masterschool.com/auth)
 
 <p align="center">
   <a href="https://grocerymate.masterschool.com/auth">
     <img src="https://github.com/user-attachments/assets/0461d1cd-3a18-4dda-b6a1-2781c17703b2" width="600"/>
   </a>
 </p>
+
+---
 
 The webshop has the following basic functionalities:
 
