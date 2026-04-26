@@ -112,9 +112,9 @@ You are underage and cannot view alcohol products. Please wait until you are 18 
 
 #### Detailed Requirements
 
-1. **Free shipping** applies for orders above €X (e.g., €50).
-2. Orders below €X incur a **fixed shipping fee** (e.g., €5).
-3. Shipping cost is **dynamically updated** in the cart.
-4. **Discounts affect** the total used for shipping calculation.
-5. A message shows **how much more is needed** for free shipping.
+1. **Free shipping** applies for orders above 20€.
+2. Orders below 20€ incur a **fixed shipping fee** 5€.
+3. Shipping cost is **dynamically updated** in the cart. But if you first add the product to the cart and first increased the total cost above 20€, then the shipping cost remains 0€ forever. Afterwards if you reduced the total cost by removing the products from the list, the shipping price remains 0€.
+4. **Discounts affect** the total used for shipping calculation. (***need to be checked...***)
+5. A message shows **how much more is needed** for free shipping. (***here I found no option...***)
 6. Shipping cost is **clearly displayed** before checkout.
