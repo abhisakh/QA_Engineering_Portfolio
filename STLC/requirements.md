@@ -82,12 +82,13 @@ The webshop includes the following core functionalities:
 
 #### Detailed Requirements
 
-1. A **modal appears** when accessing alcoholic products.
-2. Users must enter their **age** (numeric input).
-3. Access is granted **only if age ≥ 18**.
-4. Users under 18 are **blocked** with a message.
-5. Verification **persists during the session**.
-6. Modal **cannot be bypassed** via direct URL access.
+1. A **modal appears** when accessing alcoholic products. *** Underage Notice
+You are underage and cannot view alcohol products. Please wait until you are 18 or older to access these products.***
+2. Once the session memory is clear then we need to provide again the age information.
+3. You can easily provide any input value for the age data. 
+4. Users must enter their **age** (numeric input(DD-MM-YYYY))
+5. Verification **persists during the session**. Probablly the user data is stored inside the session state which is inside the clientside server.
+6. Modal **can be bypassed** by clicking the confirm button without providing the age data. But in that case the user will be counted as underage user.
 
 ---
 
