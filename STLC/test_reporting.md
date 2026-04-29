@@ -136,7 +136,7 @@ Shipping cost remains 0€ even after total drops below 20€
 
 
 **Additional Information**
-* **Issue gone after page refresh
+* Shipping cart value resets only after page refresh.
 
 ---
 
