@@ -90,9 +90,9 @@ The webshop includes the following core functionalities:
 4. If the user is under 18:<br>
 &nbsp;&nbsp; Access to alcoholic products is denied.<br>
 &nbsp;&nbsp; The following message is displayed: <mark>You are underage and cannot view alcohol products.<mark> <br>
-&nbsp;&nbsp;&nbsp;&nbsp; If valid: <<mark>Alchoholic products are allowed.<mark> <br>
-5. Verification status is stored for the duration of the session only.
--- After session expiration, verification must be repeated.
+&nbsp;&nbsp;&nbsp;&nbsp; If valid: <mark>Alchoholic products are allowed.<mark> <br>
+5. Verification status is stored for the duration of the session only.<br>
+&nbsp;&nbsp; After session expiration, verification must be repeated.
 6. The modal cannot be bypassed without valid input.
 
 ---
