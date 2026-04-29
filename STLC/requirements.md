@@ -57,8 +57,8 @@ The webshop includes the following core functionalities:
 4. Users can edit or delete their rating at any time.
 5. Users may optionally provide written feedback.
 6. Written feedback must:
-  - - Have a minimum length of 1 character
-  - - Have a maximum length of 500 characters
+&nbsp;&nbsp; Have a minimum length of 1 character
+&nbsp;&nbsp; Have a maximum length of 500 characters
 7. The average rating is displayed with one decimal precision (e.g., 4.3 ⭐).
 8. Ratings are displayed publicly on the product page.
 
@@ -88,9 +88,9 @@ The webshop includes the following core functionalities:
 2. Users must enter their date of birth (format: DD-MM-YYYY).
 3. The system validates that the user is at least 18 years old.
 4. If the user is under 18:
-- - Access to alcoholic products is denied.
-- - The following message is displayed: <mark>"You are underage and cannot view alcohol products."</<mark>
-If valid: <<mark>Alchoholic products are allowed.</<mark>
+&nbsp;&nbsp; Access to alcoholic products is denied.
+&nbsp;&nbsp; The following message is displayed: <mark>"You are underage and cannot view alcohol products."</<mark>
+&nbsp;&nbsp;&nbsp;&nbsp; If valid: <<mark>Alchoholic products are allowed.</<mark>
 5. Verification status is stored for the duration of the session only.
 -- After session expiration, verification must be repeated.
 6. The modal cannot be bypassed without valid input.
