@@ -107,19 +107,21 @@ The webshop includes the following core functionalities:
 #### Questions
 
 1. What is the exact threshold for free shipping?
-2. Does the threshold include taxes and discounts or only product price?
-3. How is shipping displayed in the cart and checkout?
-4. What happens if the order total changes after applying a discount?
-5. Are shipping costs the same for all locations?
-6. Is the user clearly informed how much more is needed for free shipping?
+2. Does the threshold include discounts?
+3. Are shipping costs location-dependent?
+4. How is shipping cost displayed to the user?
+5. Is the user informed how much more is needed for free shipping?
+6. What happens when cart value changes dynamically?
 
 ---
 
 #### Detailed Requirements
 
-1. **Free shipping** applies for orders above 20€.
-2. Orders below 20€ incur a **fixed shipping fee** 5€.
-3. Shipping cost is **dynamically updated** in the cart. But if you first add the product to the cart and first increased the total cost above 20€, then the shipping cost remains 0€ forever. Afterwards if you reduced the total cost by removing the products from the list, the shipping price remains 0€.
-4. **Discounts affect** the total used for shipping calculation. (***need to be checked...***)
-5. A message shows **how much more is needed** for free shipping. (***here I didn't observed any such option...***)
-6. Shipping cost is **clearly displayed** before checkout.
+1. Free shipping applies to orders with a total value greater than 20€.
+2. Orders with a total value equal to or below 20€ incur a 5€ shipping fee.
+3. The order total includes discounts when calculating shipping eligibility.
+4. Shipping cost must be:
+&nbsp;&nbsp; -- Dynamically updated whenever the cart changes  <br>
+&nbsp;&nbsp; -- Clearly displayed in both cart and checkout pages  <br>
+&nbsp;&nbsp; -- Users should see a message:  <br>
+&nbsp;&nbsp&nbsp;&nbsp; -- "Add X€ more to qualify for free shipping"  <br>
