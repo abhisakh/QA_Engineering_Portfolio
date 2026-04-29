@@ -42,44 +42,43 @@ The webshop allows users to:
   - View dynamic shipping costs
 
 ## 2. Design the Test Strategy
-Scope of Testing
 
-In Scope:
+### Scope of Testing
 
-Product Rating System
-Age Verification for Alcoholic Products
-Shipping Cost Calculation
-Regression testing of:
-Cart functionality
-Checkout flow
+**In Scope:**
+  - Product Rating System
+  - Age Verification for Alcoholic Products
+  - Shipping Cost Calculation
+  - Regression testing of:
+    - Cart functionality
+    - Checkout flow
 
-Out of Scope:
+**Out of Scope:**
+  - Internal database validation not visible via UI
+  - Third-party payment gateway internal logic
+  - External integrations not impacted by new features
+    
+### Types of Testing
+  - Functional Testing – Core feature validation
+  - Regression Testing – Ensure no existing functionality breaks
+  - Boundary Value Testing – Age limits, price thresholds
+  - Usability Testing – Modal behavior, rating UI
+  - Security Testing – Age verification bypass, session handling
+  - Exploratory Testing – выявление unexpected issues
 
-Internal database validation not visible via UI
-Third-party payment gateway internal logic
-External integrations not impacted by new features
-Types of Testing
-Functional Testing – Core feature validation
-Regression Testing – Ensure no existing functionality breaks
-Boundary Value Testing – Age limits, price thresholds
-Usability Testing – Modal behavior, rating UI
-Security Testing – Age verification bypass, session handling
-Exploratory Testing – выявление unexpected issues
-Risks and Issues
-Age verification bypass (legal risk)
-→ Mitigation: Strong validation + negative testing
-Incorrect shipping calculation (financial impact)
-→ Mitigation: Boundary and dynamic cart testing
-Unmoderated user content (reputation risk)
-→ Mitigation: Future moderation recommendation
-Session-based logic failures
-→ Mitigation: Session expiration and persistence testing
-Test Logistics
-Test Manager – Oversees planning and execution
-QA Engineer(s) – Functional, regression, exploratory testing
-Developer(s) – Bug fixing and support
-End Users – UAT validation
-3. Define Test Objectives
+### Risks and Issues
+  - Age verification bypass (legal risk) => Mitigation: Strong validation + negative testing
+  - Incorrect shipping calculation (financial impact) => Mitigation: Boundary and dynamic cart testing
+  - Unmoderated user content (reputation risk) => Mitigation: Future moderation recommendation
+  - Session-based logic failures => Mitigation: Session expiration and persistence testing
+
+### Test Logistics
+  - Test Manager – Oversees planning and execution
+  - QA Engineer(s) – Functional, regression, exploratory testing
+  - Developer(s) – Bug fixing and support
+  - End Users – UAT validation
+    
+## 3. Define Test Objectives
 Objectives
 Functionality:
 Verify all new features behave according to requirements
