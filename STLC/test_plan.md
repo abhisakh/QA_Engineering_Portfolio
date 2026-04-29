@@ -13,23 +13,23 @@ The new features aim to: <br>
 
 ### User Base
 The system is intended for: <br>
--- General online shoppers <br>
--- Registered users purchasing products <br>
--- Users aged 18+ (for alcoholic products)  <br>
--- Returning users interacting with reviews and cart features  <br>
+  - General online shoppers <br>
+  - Registered users purchasing products <br>
+  - Users aged 18+ (for alcoholic products)  <br>
+  - Returning users interacting with reviews and cart features  <br>
 
 ### Hardware and Software Specifications
 **Hardware Requirements:**  <br>
--- Devices: Desktop, laptop, tablet, smartphone <br>
--- Minimum: 4GB RAM, modern processor  <br>
+  - Devices: Desktop, laptop, tablet, smartphone <br>
+  - Minimum: 4GB RAM, modern processor  <br>
 
 **Software Requirements:**
--- Operating Systems: Windows, macOS, Android, iOS  <br>
--- Browsers: Chrome, Firefox, Safari, Edge  <br>
+  - Operating Systems: Windows, macOS, Android, iOS  <br>
+  - Browsers: Chrome, Firefox, Safari, Edge  <br>
 Dependencies:  <br>
-----  Payment gateway integration  <br>
-----  Session management system  <br>
-----  Backend APIs for products, ratings, and checkout  <br>
+  - Payment gateway integration  <br>
+  - Session management system  <br>
+  - Backend APIs for products, ratings, and checkout  <br>
 
 ### Product Functionality
 
