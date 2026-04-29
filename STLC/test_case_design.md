@@ -10,12 +10,15 @@
 
 ---
 
-# 🧪 Test Case Design – GroceryMate New Features
+# 🧪 Test Case Design – MarketMate New Features
 
-1. Product Rating System
-Test Design Techniques
+## 1. Product Rating System
 
-Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Use Case Testing, Error Guessing
+### Test Design Techniques
+  - Boundary Value Analysis (BVA)
+  - Equivalence Partitioning (EP)
+  - Use Case Testing
+  - Error Guessing
 
 Test Cases
 Use Case Testing
@@ -54,6 +57,7 @@ Error Guessing
 Test Case: Submit empty rating and empty feedback
 Input: No rating, no text
 Expected Outcome: Error message displayed
+
 2. Age Verification for Alcoholic Products
 Test Design Techniques
 
