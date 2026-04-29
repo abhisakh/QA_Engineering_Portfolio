@@ -53,7 +53,8 @@ As a registered and logged-in user who purchased a product, I can not submit a r
 | 7b    | Enter "Good quality product"    | Text is accepted              |        |                    |               |
 | 8     | Click send                      | "Invalid input for the field rating" | OK     |                    |               |
 
-<img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 07 22" src="https://github.com/user-attachments/assets/8f7c026c-15b5-4ad2-8232-9a35954217b9" />
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 09 04" src="https://github.com/user-attachments/assets/48dfa340-4057-4955-b091-6497f230eedc" />
+
 
 
 ---
