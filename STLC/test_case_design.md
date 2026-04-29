@@ -67,6 +67,11 @@
 * **Input:** No rating, no text
 * **Expected Outcome:** Error message displayed
 
+**10. Error Guessing**
+* **Test Case:** During editing the comment can we provide more than 500 character which is accepted.
+* **Input:** Input 1000 or more character
+* **Expected Outcome:** Error message displayed
+
 ---
 
 ## 2. Age Verification for Alcoholic Products
