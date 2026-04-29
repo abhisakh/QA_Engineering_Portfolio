@@ -124,4 +124,4 @@ The webshop includes the following core functionalities:
 &nbsp;&nbsp; Dynamically updated whenever the cart changes  <br>
 &nbsp;&nbsp; Clearly displayed in both cart and checkout pages  <br>
 &nbsp;&nbsp; Users should see a message:  <br>
-&nbsp;&nbsp&nbsp;&nbsp; "Add X€ more to qualify for free shipping"  <br>
+&nbsp;&nbsp;&nbsp;&nbsp; "Add X€ more to qualify for free shipping"  <br>
