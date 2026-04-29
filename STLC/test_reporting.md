@@ -57,7 +57,7 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 | 7b    | Click on the three dots which is located at the upper right corner   | Text is accepted              |        |                    |               |
 | 7c     | Pick the edit option            | Review panel will be displayed | OK     |                    |               |
 | 7d     | Insert 1000 character           | Text is accepted   | NOK     |                    |               |
-| 7e     |Click save changes           | Review posted | OK     |                    |               |
+| 7e     |Click save changes           | Review posted | OK     |                    |     Bug-001           |
 
 
 
