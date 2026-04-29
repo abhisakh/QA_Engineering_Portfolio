@@ -128,43 +128,37 @@ The webshop allows users to:
   - UAT sign-off completed
     
 ## 5. Resource Planning
+### Human Resources:
+  - QA Engineers
+  - Developers
+  - Test Manager
+  - UAT participants
 
-Human Resources:
+### Hardware:
+  - Desktop and mobile devices
 
-QA Engineers
-Developers
-Test Manager
-UAT participants
+### Software:
+  - Browsers (Chrome, Firefox, Safari, Edge)
+  - Test management tools (e.g., Jira, TestRail)
 
-Hardware:
+### Test Data:
+  - User accounts (underage, adult)
+  - Products (alcoholic & non-alcoholic)
+  - Cart scenarios (below/above 20€)
+    
+## 6. Plan Test Environment
+### Environments:
+  - DEV – Development testing
+  - TEST – QA validation
+  - ACC/UAT – User acceptance
+  - PROD – Live environment
 
-Desktop and mobile devices
-
-Software:
-
-Browsers (Chrome, Firefox, Safari, Edge)
-Test management tools (e.g., Jira, TestRail)
-
-Test Data:
-
-User accounts (underage, adult)
-Products (alcoholic & non-alcoholic)
-Cart scenarios (below/above 20€)
-6. Plan Test Environment
-
-Environments:
-
-DEV – Development testing
-TEST – QA validation
-ACC/UAT – User acceptance
-PROD – Live environment
-
-Setup Requirements:
-
-Stable backend APIs
-Session management enabled
-Test accounts and seeded data
-7. Schedule and Estimation
+### Setup Requirements:
+  - Stable backend APIs
+  - Session management enabled
+  - Test accounts and seeded data
+    
+## 7. Schedule and Estimation
 Activity	Start Date	End Date	Environment	Responsible	Effort
 Test Planning	01/05/2026	03/05/2026	All	Test Manager	16h
 Test Case Design	04/05/2026	08/05/2026	TEST	QA Team	32h
