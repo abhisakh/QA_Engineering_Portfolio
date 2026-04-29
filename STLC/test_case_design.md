@@ -22,75 +22,75 @@
 
 ### Test Cases
 **1. Use Case Testing**
-Test Case:
+Test Case:<br>
   - Verify that a user can submit a rating after purchasing a product
-Input:
+Input:<br>
   - Logged-in user with completed purchase submits 4⭐ rating
-Expected Outcome:
+Expected Outcome:<br>
   - Rating is successfully saved and displayed
     
 **2. Equivalence Partitioning**
-Test Case: 
+Test Case:<br> 
   - Verify rating submission for valid rating values (1–5)
-Input:
+Input:<br>
   - Ratings = 1, 3, 5
-Expected Outcome:
+Expected Outcome:<br>
   - Ratings are accepted and displayed correctly
 
 **3. Boundary Value Analysis**
-Test Case: 
+Test Case: <br>
   - Verify rating outside valid range
-Input:
+Input:<br>
   - Rating = 0 or 6
-Expected Outcome:
+Expected Outcome:<br>
   - Error message displayed, rating not accepted
     
 **4. Use Case Testing**
-Test Case: 
+Test Case: <br>
   - Verify user can edit an existing rating
-Input:
+Input:<br>
   - Change rating from 3⭐ to 5⭐
-Expected Outcome:
+Expected Outcome:<br>
   - Rating is updated successfully
     
 **5. Use Case Testing**
-Test Case: 
+Test Case:<br> 
   - Verify user can delete their rating
-Input:
+Input:<br>
   - Delete submitted review
-Expected Outcome:
+Expected Outcome:<br>
   - Rating is removed from product page
     
 **6. Equivalence Partitioning**
-Test Case: 
+Test Case:<br> 
   - Verify feedback text within valid length
-Input:
+Input:<br>
   - Feedback = 100 characters
-Expected Outcome:
+Expected Outcome:<br>
   - Feedback is accepted and displayed
     
 **7. Boundary Value Analysis**
-Test Case: 
+Test Case: <br>
   - Verify feedback exceeding maximum length (500 chars)
-Input:
+Input:<br>
   - Feedback = 501 characters
-Expected Outcome:
+Expected Outcome:<br>
   - Error message displayed
 
 **8. Error Guessing**
-Test Case: 
+Test Case: <br>
   - Submit rating without purchase
-Input:
+Input:<br>
   - User without purchase attempts rating
-Expected Outcome:
+Expected Outcome:<br>
   - Rating is rejected
 
 **9. Error Guessing**
-Test Case: 
+Test Case:<br> 
   - Submit empty rating and empty feedback
-Input:
+Input:<br>
   - No rating, no text
-Expected Outcome:
+Expected Outcome:<br>
   - Error message displayed
 
 ## 2. Age Verification for Alcoholic Products
@@ -103,75 +103,75 @@ Expected Outcome:
 
 ### Test Cases
 **1. Use Case Testing**
-Test Case: 
+Test Case: <br>
   - Verify modal appears when accessing alcoholic products
-Input:
+Input:<br>
   - Navigate to alcoholic category
-Expected Outcome:
+Expected Outcome:<br>
   - Age verification modal is displayed
     
 **2. Boundary Value Analysis**
-Test Case: 
+Test Case:<br> 
   - Verify access for user exactly 18 years old
-Input:
+Input:<br>
   - DOB = Today - 18 years
-Expected Outcome:
+Expected Outcome:<br>
   - Access granted
     
 **3. Boundary Value Analysis**
-Test Case: 
+Test Case:<br> 
   - Verify access for user just below 18
-Input:
+Input:<br>
   - DOB = Today - 18 years + 1 day
-Expected Outcome:
+Expected Outcome:<br>
   - Access denied with error message
     
 **4. Equivalence Partitioning**
-Test Case: 
+Test Case: <br>
   - Verify access for valid adult users (>18)
-Input:
+Input:<br>
   - DOB = Today - 25 years
-Expected Outcome:
+Expected Outcome:<br>
   - Access granted
     
 **5. Equivalence Partitioning**
-Test Case: 
+Test Case:<br> 
   - Verify access for underage users (<18)
-Input:
+Input:<br>
   - DOB = Today - 16 years
-Expected Outcome:
+Expected Outcome:<br>
   - Access denied
     
 **6. Error Guessing**
-Test Case: 
+Test Case:<br> 
   - Submit empty input
-Input:
+Input:<br>
   - No DOB entered
-Expected Outcome:
+Expected Outcome:<br>
   - Error message displayed
     
 **7. Error Guessing**
-Test Case: 
+Test Case:<br> 
   - Enter invalid date format
-Input:
+Input:<br>
   - "32-13-2020"
-Expected Outcome:
+Expected Outcome:<br>
   - Validation error
     
 **8. Security Testing**
-Test Case: 
+Test Case:<br> 
   - Attempt to bypass modal
-Input:
+Input:<br>
   - Direct URL access or skip input
-Expected Outcome:
+Expected Outcome:<br>
   - Access still restricted
     
 **9. Use Case Testing**
-Test Case: 
+Test Case: <br>
   - Verify session-based persistence
-Input:
+Input:<br>
   - Verify once, navigate away and return
-Expected Outcome:
+Expected Outcome:<br>
   - Modal does not reappear during session
 
 ## 3. Shipping Cost Changes
@@ -184,75 +184,75 @@ Expected Outcome:
 
 ### Test Cases
 **1. Boundary Value Analysis**
-Test Case: 
+Test Case: <br>
   - Verify shipping cost at threshold (20€)
-Input:
+Input:<br>
   - Cart total = 20€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping fee = 5€
     
 **2. Boundary Value Analysis**
-Test Case:
+Test Case:<br>
   - Verify shipping cost just above threshold
-Input:
+Input:<br>
   - Cart total = 20.01€
-Expected Outcome:
+Expected Outcome:<br>
   - Free shipping applied
     
 **3. Boundary Value Analysis**
-Test Case: 
+Test Case: <br>
   - Verify shipping cost just below threshold
-Input:
+Input:<br>
   - Cart total = 19.99€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping fee = 5€
 
 **4. Equivalence Partitioning**
-Test Case: 
+Test Case:<br> 
   - Verify free shipping for valid high-value orders
-Input:
+Input:<br>
   - Cart total = 50€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping = 0€
 
 **5. Use Case Testing**
-Test Case: 
+Test Case:<br> 
   - Verify dynamic update when adding products
-Input:
+Input:<br>
   - Increase cart from 15€ => 25€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping changes from 5€ => 0€
 
 **6. Use Case Testing**
-Test Case: 
+Test Case: <br>
   - Verify dynamic update when removing products
-Input:
+Input:<br>
   - Decrease cart from 25€ → 15€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping changes from 0€ → 5€
 
 **7. Error Guessing**
-Test Case: 
+Test Case:<br> 
   - Apply discount affecting threshold
-Input:
+Input:<br>
   - Cart = 25€, apply discount → 18€
-Expected Outcome:
+Expected Outcome:<br>
   - Shipping = 5€
 
 **8. Use Case Testing**
-Test Case: 
+Test Case:<br> 
   - Verify message for free shipping threshold
-Input:
+Input:<br>
   - Cart total = 15€
-Expected Outcome:
+Expected Outcome:<br>
   - Message shows "Add 5€ more for free shipping"
 
 **9. Error Guessing**
-Test Case: 
+Test Case: <br>
   - Empty cart scenario
-Input:
+Input:<br>
   - No products in cart
-Expected Outcome:
+Expected Outcome:<br>
   - No shipping cost displayed
 
 
