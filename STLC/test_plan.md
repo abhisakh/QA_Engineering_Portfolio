@@ -79,24 +79,27 @@ The webshop allows users to:
   - End Users – UAT validation
     
 ## 3. Define Test Objectives
-Objectives
-Functionality:
-Verify all new features behave according to requirements
-Data Validation:
-Ensure correct handling of:
-Age input
-Ratings
-Price calculations
-User Experience:
-Validate usability of:
-Rating system
-Age verification modal
-Shipping feedback messages
-Security:
-Prevent:
-Age restriction bypass
-Invalid input acceptance
-Expected Outcomes
+
+### Objectives
+
+**Functionality:**
+  - Verify all new features behave according to requirements
+  - Data Validation:
+    - Ensure correct handling of:
+      - Age input
+      - Ratings
+      - Price calculations
+  - User Experience:
+    - Validate usability of:
+      - Rating system
+      - Age verification modal
+      - Shipping feedback messages
+  - Security:
+    - Prevent:
+      - Age restriction bypass
+      - Invalid input acceptance
+        
+**Expected Outcomes**
 Ratings are correctly created, edited, and displayed
 Age-restricted content is properly controlled
 Shipping cost updates accurately based on cart value
