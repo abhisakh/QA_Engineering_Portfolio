@@ -32,17 +32,16 @@ The system is intended for: <br>
     - Backend APIs for products, ratings, and checkout  <br>
 
 ### Product Functionality
-
 The webshop allows users to:
+  - Register and log in
+  - Browse and search products
+  - Add products to favorites and basket
+  - Complete checkout (billing, shipping, payment)
+  - Rate and review products
+  - Access restricted products based on age
+  - View dynamic shipping costs
 
-Register and log in
-Browse and search products
-Add products to favorites and basket
-Complete checkout (billing, shipping, payment)
-Rate and review products
-Access restricted products based on age
-View dynamic shipping costs
-2. Design the Test Strategy
+## 2. Design the Test Strategy
 Scope of Testing
 
 In Scope:
