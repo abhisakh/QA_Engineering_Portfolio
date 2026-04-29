@@ -6,30 +6,30 @@
 
 ### Objective
 The objective of this webshop is to provide users with a seamless online shopping experience, including product browsing, purchasing, and interaction features.
-The new features aim to:
--- Enhance user engagement (Product Rating System)
--- Ensure legal compliance (Age Verification for alcoholic products)
--- Improve pricing transparency (Shipping Cost logic)
+The new features aim to: <br>
+-- Enhance user engagement (Product Rating System) <br>
+-- Ensure legal compliance (Age Verification for alcoholic products) <br>
+-- Improve pricing transparency (Shipping Cost logic) <br>
 
 ### User Base
-The system is intended for:
--- General online shoppers
--- Registered users purchasing products
--- Users aged 18+ (for alcoholic products)
--- Returning users interacting with reviews and cart features
+The system is intended for: <br>
+-- General online shoppers <br>
+-- Registered users purchasing products <br>
+-- Users aged 18+ (for alcoholic products)  <br>
+-- Returning users interacting with reviews and cart features  <br>
 
 ### Hardware and Software Specifications
-**Hardware Requirements:**
--- Devices: Desktop, laptop, tablet, smartphone
--- Minimum: 4GB RAM, modern processor
+**Hardware Requirements:**  <br>
+-- Devices: Desktop, laptop, tablet, smartphone <br>
+-- Minimum: 4GB RAM, modern processor  <br>
 
 **Software Requirements:**
--- Operating Systems: Windows, macOS, Android, iOS
--- Browsers: Chrome, Firefox, Safari, Edge
-Dependencies:
-----  Payment gateway integration
-----  Session management system
-----  Backend APIs for products, ratings, and checkout
+-- Operating Systems: Windows, macOS, Android, iOS  <br>
+-- Browsers: Chrome, Firefox, Safari, Edge  <br>
+Dependencies:  <br>
+----  Payment gateway integration  <br>
+----  Session management system  <br>
+----  Backend APIs for products, ratings, and checkout  <br>
 
 ### Product Functionality
 
