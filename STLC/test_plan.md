@@ -159,16 +159,18 @@ The webshop allows users to:
   - Test accounts and seeded data
     
 ## 7. Schedule and Estimation
-Activity	Start Date	End Date	Environment	Responsible	Effort
-Test Planning	01/05/2026	03/05/2026	All	Test Manager	16h
-Test Case Design	04/05/2026	08/05/2026	TEST	QA Team	32h
-Functional Testing	09/05/2026	15/05/2026	TEST	QA Team	48h
-Regression Testing	16/05/2026	18/05/2026	TEST	QA Team	24h
-Security Testing	19/05/2026	20/05/2026	TEST	QA Team	16h
-UAT	21/05/2026	25/05/2026	ACC	Users	24h
-Final Fix & Retest	26/05/2026	28/05/2026	TEST	QA + Dev	24h
-Release	30/05/2026	30/05/2026	PROD	DevOps	8h
-8. Test Deliverables
+| Activity | Start Date | End Date | Environment | Responsible | Effort |
+| --- | --- | --- | --- | --- | --- |
+| Test Planning | 01/05/2026 |	03/05/2026 | All |	Test Manager | 16h |
+| Test Case Design	| 04/05/2026 |	08/05/2026 |	TEST |	QA Team |	32h |
+| Functional Testing |	09/05/2026 |	15/05/2026 |	TEST |	QA Team |	48h |
+| Regression Testing |	16/05/2026 |	18/05/2026 |	TEST |	QA Team |	24h |
+| Security Testing |	19/05/2026 |	20/05/2026 |	TEST |	QA Team	| 16h |
+| UAT	21/05/2026 |	25/05/2026 |	ACC |	Users |	24h |
+| Final Fix & Retest |	26/05/2026 |	28/05/2026 |	TEST |	QA + Dev |	24h |
+| Release	30/05/2026 |	30/05/2026 |	PROD |	DevOps |	8h |
+
+## 8. Test Deliverables
 
 The following deliverables will be produced:
 
