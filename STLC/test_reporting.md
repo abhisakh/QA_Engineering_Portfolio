@@ -13,6 +13,10 @@
 
 # 🧾 Test Report – Webshop New Features
 
+---
+
+## Test Case => <mark>  1. Product Rating System <mark> => 1. Use Case Testing
+
 ## Scenario 1: Valid Product Rating Submission
 
 As a logged-in user who purchased a product, I can successfully submit a rating and review.
