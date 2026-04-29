@@ -40,23 +40,27 @@ The webshop includes the following core functionalities:
 
 #### Questions
 
-1. Can a user rate a product multiple times, or only once per account?
-2. Are ratings allowed only after purchasing the product, or for any user?
-3. What is the maximum/minimum length for written feedback?
-4. Can users edit or delete their rating after submitting it?
-5. How is the average rating calculated and displayed (rounding, decimals)?
-6. Are inappropriate or offensive reviews moderated or filtered?
+1. Can users rate a product more than once?
+2. Are ratings restricted to users who purchased the product?
+3. What are the minimum and maximum lengths for written feedback?
+4. Can users edit or delete their ratings?
+5. How is the average rating calculated and displayed?
+6. Is there any moderation for inappropriate content?
 
 ---
 
 #### Detailed Requirements
 
-1. Users can rate products from **1 to 5 stars**.The earlier rating from the same user can be edited.
-2. Each user can submit **only one rating** per product but only after purchase.
-3. Users can optionally add **written feedback** (no characters limit).
-4. Users can **edit or delete** their review.
-5. Average rating is displayed with **one decimal** (e.g., 4.3 ⭐).
-6. Reviews are not being **moderated** for inappropriate content.
+1. Users can rate a product using a 1 to 5 star system.
+2. Each user can submit only one rating per product.
+3. Users are allowed to rate a product only after purchasing it.
+4. Users can edit or delete their rating at any time.
+5. Users may optionally provide written feedback.
+6. Written feedback must:
+  - Have a minimum length of 1 character
+  - Have a maximum length of 500 characters
+7. The average rating is displayed with one decimal precision (e.g., 4.3 ⭐).
+8. Ratings are displayed publicly on the product page.
 
 ---
 
