@@ -60,10 +60,12 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 | 7e     |Click save changes           | Review posted | OK     |                    |               |
 
 
+
 | Screenshot A | Screenshot B |
 | :---: | :---: |
-| <img width="500" src="https://github.com/user-attachments/assets/8caa8825-2462-40d3-95dd-f9a234c3e7c7" /> | <img width="500" src="https://github.com/user-attachments/assets/60166eed-b15f-4ae8-a80f-76a20288f3a8" /> |
-| <img width="500" src="https://github.com/user-attachments/assets/92c1d48d-fb3a-4d44-9d3a-3cf3d1cc3f4b" /> | |
+| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com" /> |
+| <img width="500" src="https://github.com" /> | |
+
 
 
 
