@@ -1,3 +1,15 @@
+> 📋 [Home Task](https://masterschool.notion.site/Home-work-Test-Plan-Test-Case-Design-212fc8ca6c014f7d9ca860ba5477f83e) &nbsp;|&nbsp; 🌐 [Open GroceryMate App](https://grocerymate.masterschool.com/)
+
+---
+
+<p align="center">
+  <a href="https://grocerymate.masterschool.com/auth">
+    <img src="https://github.com/user-attachments/assets/0461d1cd-3a18-4dda-b6a1-2781c17703b2" width="600"/>
+  </a>
+</p>
+
+---
+
 # Test Plan for Webshop New Features
 
 ---
