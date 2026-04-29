@@ -149,8 +149,8 @@ Screenshots / Attachments
 * Validation appears to be applied during initial review creation but not enforced during editing
 * This leads to inconsistent behavior between create vs edit flows
 * May cause:
-* **UI issues (overflow text)
-* **Performance concerns (very large inputs)
+* ** UI issues (overflow text)
+* ** Performance concerns (very large inputs)
 * Likely missing frontend or backend validation on update API
 
 
