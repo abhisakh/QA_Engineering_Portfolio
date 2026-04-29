@@ -121,7 +121,7 @@ The webshop includes the following core functionalities:
 2. Orders with a total value equal to or below 20€ incur a 5€ shipping fee.
 3. The order total includes discounts when calculating shipping eligibility.
 4. Shipping cost must be:
-&nbsp;&nbsp; -- Dynamically updated whenever the cart changes  <br>
-&nbsp;&nbsp; -- Clearly displayed in both cart and checkout pages  <br>
-&nbsp;&nbsp; -- Users should see a message:  <br>
-&nbsp;&nbsp&nbsp;&nbsp; -- "Add X€ more to qualify for free shipping"  <br>
+&nbsp;&nbsp; - - Dynamically updated whenever the cart changes  <br>
+&nbsp;&nbsp; - - Clearly displayed in both cart and checkout pages  <br>
+&nbsp;&nbsp; - - Users should see a message:  <br>
+&nbsp;&nbsp&nbsp;&nbsp; - - "Add X€ more to qualify for free shipping"  <br>
