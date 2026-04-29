@@ -33,9 +33,11 @@ As a registered user who purchased a product, I can successfully submit a rating
 | 7b    | Enter "Good quality product"    | Text is accepted              |        |                    |               |
 | 8     | Click send                      | Review is saved and displayed | OK     |                    |               |
 
+
+| Image 1 | Image 2 |
 | :---: | :---: |
-| <img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 13 32" src="https://github.com/user-attachments/assets/855e2a61-0e4f-4cd2-a37e-37da10a0d1c4" /> | 
-<img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 13 46" src="https://github.com/user-attachments/assets/d5b9c279-a8ed-449c-a52c-ea0cc59d8a76" /> |
+| <img width="1118" alt="Screenshot 1" src="https://github.com/user-attachments/assets/855e2a61-0e4f-4cd2-a37e-37da10a0d1c4" /> | <img width="1118" alt="Screenshot 2" src="https://github.com/user-attachments/assets/d5b9c279-a8ed-449c-a52c-ea0cc59d8a76" /> |
+
 
 
 
