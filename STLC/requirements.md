@@ -53,12 +53,10 @@ The webshop includes the following core functionalities:
 
 1. Users can rate products from **1 to 5 stars**.The earlier rating from the same user can be edited.
 2. Each user can submit **only one rating** per product but only after purchase.
-3. Users can optionally add **written feedback** (1–500 characters).(***need to be checked...***)
-
-4. Users can **edit or delete** their review.(***need to be checked...***)
-
+3. Users can optionally add **written feedback** (no characters limit).
+4. Users can **edit or delete** their review.
 5. Average rating is displayed with **one decimal** (e.g., 4.3 ⭐).
-6. Reviews are **moderated** for inappropriate content.(***need to be checked...***)
+6. Reviews are not being **moderated** for inappropriate content.
 
 ---
 
