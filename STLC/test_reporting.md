@@ -47,7 +47,17 @@ Registered user who want to purchase a product can bypass the shipping fees.
 | 9     | Click on the Basket             | Redirected to checkout page | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
 | 10    | Check the shipment fee          | Should display 5 euro       | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
 | 11    | Increase the quantity to 23     | Shipment fee 0 euro         | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
-| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug 001      |
+| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug-001      |
+
+
+| Step# | Action                   | Expected outcome      | OK/NOK | URL       | Link to issue |
+| ----- | ------------------------ | --------------------- | ------ | --------- | ------------- |
+| 1     | Add products => total 25€ | Cart updated          | OK     |           |               |
+| 2     | Go to checkout           | Page displayed        | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+| 3     | Verify shipping          | Shipping = 0€         | OK     |           |               |
+| 4     | Reduce total to 15€      | Cart updated          | OK     |           |               |
+| 5     | Check shipping           | Shipping should be 5€ | NOK  |           | #BUG-001      |
+
 
 ## 🐞 Bug Report
 ### BUG-001: Shipping cost not updated after cart value drops below threshold
