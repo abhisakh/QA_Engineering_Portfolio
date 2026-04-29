@@ -28,10 +28,14 @@ As a registered user who purchased a product, I can successfully submit a rating
 | 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
 | 4     | Enter valid date of birth       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
 | 5     | Click on Confirm                | Date of birth page disappeared| OK     | [/store](https://grocerymate.masterschool.com/store)|             |
-| 6     | Click on a purchased product image(Oranges)    | Product detail page opens | OK   | [/product/123](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f)|      |
+| 6     | Click on a purchased product image(Loose Pears)    | Product detail page opens | OK   | [/product/123](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)|      |
 | 7a    | Select 4-star rating            | Rating is selected            |        |                    |               |
 | 7b    | Enter "Good quality product"    | Text is accepted              |        |                    |               |
 | 8     | Click send                      | Review is saved and displayed | OK     |                    |               |
+
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 13 46" src="https://github.com/user-attachments/assets/d5b9c279-a8ed-449c-a52c-ea0cc59d8a76" />
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 18 13 32" src="https://github.com/user-attachments/assets/855e2a61-0e4f-4cd2-a37e-37da10a0d1c4" />
+
 
 ---
 
