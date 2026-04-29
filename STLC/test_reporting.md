@@ -15,7 +15,7 @@
 
 ---
 
-## Test Case => <mark>  1. Product Rating System <mark> => 1. Use Case Testing
+## Test Case => <mark>  1. Product Rating System</mark>  => <mark>1. Use Case Testing</mark>
 
 ## Scenario 1: Valid Product Rating Submission
 
@@ -36,7 +36,7 @@ As a logged-in user who purchased a product, I can successfully submit a rating 
 
 ---
 
-## Test Case => <mark> 3. Shipping Cost Changes <mark>=> 5. Use Case Testing
+## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>
 
 ## Scenario 2: Shipment Fee Dynamically Updated (Shipping fee not updated when product value decreases below threshold 20 euro after adding producr value more than 20 euro.)
 
