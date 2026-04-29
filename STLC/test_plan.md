@@ -10,7 +10,7 @@
 
 ---
 
-# Test Plan for Webshop New Features
+# Test Plan for MarketMate New Features
 
 ---
 
