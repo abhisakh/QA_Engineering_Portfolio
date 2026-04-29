@@ -1,4 +1,4 @@
-> 📋 [Home Task](https://masterschool.notion.site/Home-work-Test-Plan-Test-Case-Design-212fc8ca6c014f7d9ca860ba5477f83e) &nbsp;|&nbsp; 🌐 [Open GroceryMate App](https://grocerymate.masterschool.com/)
+> 📋 [Home Task](https://masterschool.notion.site/Home-work-Test-Plan-Test-Case-Design-212fc8ca6c014f7d9ca860ba5477f83e) &nbsp;|&nbsp; 🌐 [Open MarketMate App](https://grocerymate.masterschool.com/)
 
 ---
 
