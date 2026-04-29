@@ -59,8 +59,83 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 | 7d     | Insert 1000 character           | Text is accepted   | NOK     |                    |               |
 | 7e     |Click save changes           | Review posted | OK     |                    |     Bug-001           |
 
+---
 
+## 🐞 BUG-001: Review edit allows more than 500 characters
 
+---
+
+**Title**
+
+User is able to submit review with more than 500 characters during edit
+
+---
+
+**Priority**
+
+High
+
+---
+
+**Reporter**
+
+Abhisakh Sarma
+
+---
+
+**Date**
+
+29 April 2026
+
+---
+
+**Environment**
+
+TEST
+
+---
+
+**Application**
+
+[MarketMate Webshop](https://grocerymate.masterschool.com/auth)
+
+---
+
+**Page**
+
+Product Details Page (Review Section)
+Example: https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990
+
+---
+
+**Browser / Operating System**
+
+Chrome 123 / MacOS
+
+---
+
+**Repro Steps**
+Navigate to webshop and log in with valid credentials
+Navigate to a previously purchased product
+Locate an existing review created by the user
+Click on the three-dot menu (⋮) on the review
+Select Edit option
+Enter a review text exceeding 500 characters (e.g., 1000 characters)
+Click on Save Changes
+
+**Expected Result**
+
+The system should prevent submission of review text exceeding 500 characters and display a validation error message.
+
+**Actual Result**
+
+The system accepts and saves the review with more than 500 characters without any validation or error.
+
+---
+
+Screenshots / Attachments
+
+(Attach screenshot showing long review successfully saved)
 
 | Screenshot A | Screenshot B |
 | :---: | :---: |
@@ -68,9 +143,15 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 | <img width="500" src="https://github.com/user-attachments/assets/92c1d48d-fb3a-4d44-9d3a-3cf3d1cc3f4b" /> | |
 
 
+---
 
-
-
+**Additional Information**
+* Validation appears to be applied during initial review creation but not enforced during editing
+* This leads to inconsistent behavior between create vs edit flows
+* May cause:
+* **UI issues (overflow text)
+* **Performance concerns (very large inputs)
+* Likely missing frontend or backend validation on update API
 
 
 
