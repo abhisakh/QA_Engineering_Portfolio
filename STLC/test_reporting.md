@@ -14,9 +14,10 @@
 ## 📖 Table of Contents
 - [Test Case => <mark>  1. Product Rating System</mark>  => <mark>1. Use Case Testing</mark>](#test1_1)
 - [Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. Error Guessing</mark>](#test1_10)
-  - [Bug-001(#bug001)]
-- [Test Case => <mark>  3. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>](#test3_3)
-  - [Bug-003(#bug003)]
+  - [Bug-001](#bug001)
+- [Test Case => <mark>  1. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>](#test1_3)
+- [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>](#test3_5)
+  - [Bug-003](#bug003)
 - 
 
 ---
@@ -168,8 +169,8 @@ Screenshots / Attachments
 
 
 ---
-<a id ="test3_3"></a>
-## Test Case => <mark>  3. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>
+<a id ="test1_3"></a>
+## Test Case => <mark>  1. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>
 <-- [Back](#table)
 ## Scenario 1: Invalid Product Rating Submission
 
@@ -192,9 +193,9 @@ As a registered and logged-in user who purchased a product, I can not submit a r
 
 
 ---
-
+<a id ="test3_5"></a>
 ## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>
-
+<-- [Back](#table)
 ## Scenario 2: Shipment Fee Dynamically Updated (Shipping fee not updated when product value decreases below threshold 20 euro after adding producr value more than 20 euro.)
 
 Registered user who want to purchase a product can bypass the shipping fees.
