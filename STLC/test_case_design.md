@@ -21,77 +21,77 @@
   - Error Guessing
 
 ### Test Cases
-**1. Use Case Testing**
+**1. Use Case Testing**<br>
 Test Case:<br>
-  - Verify that a user can submit a rating after purchasing a product<br>
+    - Verify that a user can submit a rating after purchasing a product<br>
 Input:<br>
-  - Logged-in user with completed purchase submits 4⭐ rating<br>
+    - Logged-in user with completed purchase submits 4⭐ rating<br>
 Expected Outcome:<br>
-  - Rating is successfully saved and displayed<br>
+    - Rating is successfully saved and displayed<br>
     
-**2. Equivalence Partitioning**
+**2. Equivalence Partitioning**<br>
 Test Case:<br> 
-  - Verify rating submission for valid rating values (1–5)<br>
+    - Verify rating submission for valid rating values (1–5)<br>
 Input:<br>
-  - Ratings = 1, 3, 5 <br>
+    - Ratings = 1, 3, 5 <br>
 Expected Outcome:<br>
-  - Ratings are accepted and displayed correctly<br>
+    - Ratings are accepted and displayed correctly<br>
 
-**3. Boundary Value Analysis**
+**3. Boundary Value Analysis**<br>
 Test Case: <br>
-  - Verify rating outside valid range<br>
+    - Verify rating outside valid range<br>
 Input:<br>
-  - Rating = 0 or 6 <br>
+    - Rating = 0 or 6 <br>
 Expected Outcome:<br>
-  - Error message displayed, rating not accepted<br>
+    - Error message displayed, rating not accepted<br>
     
-**4. Use Case Testing**
+**4. Use Case Testing**<br>
 Test Case: <br>
-  - Verify user can edit an existing rating<br>
+    - Verify user can edit an existing rating<br>
 Input:<br>
-  - Change rating from 3⭐ to 5⭐<br>
+    - Change rating from 3⭐ to 5⭐<br>
 Expected Outcome:<br>
-  - Rating is updated successfully<br>
+    - Rating is updated successfully<br>
     
-**5. Use Case Testing**
+**5. Use Case Testing**<br>
 Test Case:<br> 
-  - Verify user can delete their rating<br>
+    - Verify user can delete their rating<br>
 Input:<br>
-  - Delete submitted review<br>
+    - Delete submitted review<br>
 Expected Outcome:<br>
-  - Rating is removed from product page<br>
+    - Rating is removed from product page<br>
     
-**6. Equivalence Partitioning**
+**6. Equivalence Partitioning**<br>
 Test Case:<br> 
-  - Verify feedback text within valid length<br>
+    - Verify feedback text within valid length<br>
 Input:<br>
-  - Feedback = 100 characters<br>
+    - Feedback = 100 characters<br>
 Expected Outcome:<br>
-  - Feedback is accepted and displayed<br>
+    - Feedback is accepted and displayed<br>
     
-**7. Boundary Value Analysis**
+**7. Boundary Value Analysis**<br>
 Test Case: <br>
-  - Verify feedback exceeding maximum length (500 chars)<br>
+    - Verify feedback exceeding maximum length (500 chars)<br>
 Input:<br>
-  - Feedback = 501 characters<br>
+    - Feedback = 501 characters<br>
 Expected Outcome:<br>
-  - Error message displayed<br>
+    - Error message displayed<br>
 
-**8. Error Guessing**
+**8. Error Guessing**<br>
 Test Case: <br>
-  - Submit rating without purchase<br>
+    - Submit rating without purchase<br>
 Input:<br>
-  - User without purchase attempts rating<br>
+    - User without purchase attempts rating<br>
 Expected Outcome:<br>
-  - Rating is rejected<br>
+    - Rating is rejected<br>
 
-**9. Error Guessing**
+**9. Error Guessing**<br>
 Test Case:<br> 
-  - Submit empty rating and empty feedback
+  - Submit empty rating and empty feedback<br>
 Input:<br>
-  - No rating, no text
+    - No rating, no text<br>
 Expected Outcome:<br>
-  - Error message displayed
+    - Error message displayed<br>
 
 ## 2. Age Verification for Alcoholic Products
 
@@ -102,77 +102,77 @@ Expected Outcome:<br>
   - Error Guessing
 
 ### Test Cases
-**1. Use Case Testing**
+**1. Use Case Testing**<br>
 Test Case: <br>
-  - Verify modal appears when accessing alcoholic products
+    - Verify modal appears when accessing alcoholic products<br>
 Input:<br>
-  - Navigate to alcoholic category
+    - Navigate to alcoholic category<br>
 Expected Outcome:<br>
-  - Age verification modal is displayed
+    - Age verification modal is displayed<br>
     
-**2. Boundary Value Analysis**
+**2. Boundary Value Analysis**<br>
 Test Case:<br> 
-  - Verify access for user exactly 18 years old
+    - Verify access for user exactly 18 years old<br>
 Input:<br>
-  - DOB = Today - 18 years
+    - DOB = Today - 18 years<br>
 Expected Outcome:<br>
-  - Access granted
+    - Access granted<br>
     
-**3. Boundary Value Analysis**
+**3. Boundary Value Analysis**<br>
 Test Case:<br> 
-  - Verify access for user just below 18
+    - Verify access for user just below 18<br>
 Input:<br>
-  - DOB = Today - 18 years + 1 day
+    - DOB = Today - 18 years + 1 day<br>
 Expected Outcome:<br>
-  - Access denied with error message
+    - Access denied with error message<br>
     
-**4. Equivalence Partitioning**
+**4. Equivalence Partitioning**<br>
 Test Case: <br>
-  - Verify access for valid adult users (>18)
+    - Verify access for valid adult users (>18)<br>
 Input:<br>
-  - DOB = Today - 25 years
+    - DOB = Today - 25 years<br>
 Expected Outcome:<br>
-  - Access granted
+    - Access granted<br>
     
-**5. Equivalence Partitioning**
+**5. Equivalence Partitioning**<br>
 Test Case:<br> 
-  - Verify access for underage users (<18)
+    - Verify access for underage users (<18)<br>
 Input:<br>
-  - DOB = Today - 16 years
+    - DOB = Today - 16 years<br>
 Expected Outcome:<br>
-  - Access denied
+    - Access denied<br>
     
-**6. Error Guessing**
+**6. Error Guessing**<br>
 Test Case:<br> 
-  - Submit empty input
+    - Submit empty input<br>
 Input:<br>
-  - No DOB entered
+    - No DOB entered<br>
 Expected Outcome:<br>
-  - Error message displayed
+    - Error message displayed<br>
     
-**7. Error Guessing**
+**7. Error Guessing**<br>
 Test Case:<br> 
-  - Enter invalid date format
+    - Enter invalid date format<br>
 Input:<br>
-  - "32-13-2020"
+    - "32-13-2020"<br>
 Expected Outcome:<br>
-  - Validation error
+    - Validation error<br>
     
-**8. Security Testing**
+**8. Security Testing**<br>
 Test Case:<br> 
-  - Attempt to bypass modal
+    - Attempt to bypass modal<br>
 Input:<br>
-  - Direct URL access or skip input
+    - Direct URL access or skip input<br>
 Expected Outcome:<br>
-  - Access still restricted
+    - Access still restricted<br>
     
-**9. Use Case Testing**
+**9. Use Case Testing**<br>
 Test Case: <br>
-  - Verify session-based persistence
+    - Verify session-based persistence<br>
 Input:<br>
-  - Verify once, navigate away and return
+    - Verify once, navigate away and return<br>
 Expected Outcome:<br>
-  - Modal does not reappear during session
+    - Modal does not reappear during session<br>
 
 ## 3. Shipping Cost Changes
 
@@ -183,76 +183,76 @@ Expected Outcome:<br>
   - Error Guessing
 
 ### Test Cases
-**1. Boundary Value Analysis**
+**1. Boundary Value Analysis**<br>
 Test Case: <br>
-  - Verify shipping cost at threshold (20€)
+    - Verify shipping cost at threshold (20€)<br>
 Input:<br>
-  - Cart total = 20€
+    - Cart total = 20€<br>
 Expected Outcome:<br>
-  - Shipping fee = 5€
+    - Shipping fee = 5€<br>
     
-**2. Boundary Value Analysis**
+**2. Boundary Value Analysis**<br>
 Test Case:<br>
-  - Verify shipping cost just above threshold
+    - Verify shipping cost just above threshold<br>
 Input:<br>
-  - Cart total = 20.01€
+    - Cart total = 20.01€<br>
 Expected Outcome:<br>
-  - Free shipping applied
+    - Free shipping applied<br>
     
-**3. Boundary Value Analysis**
+**3. Boundary Value Analysis**<br>
 Test Case: <br>
-  - Verify shipping cost just below threshold
+    - Verify shipping cost just below threshold<br>
 Input:<br>
-  - Cart total = 19.99€
+    - Cart total = 19.99€<br>
 Expected Outcome:<br>
-  - Shipping fee = 5€
+    - Shipping fee = 5€<br>
 
-**4. Equivalence Partitioning**
+**4. Equivalence Partitioning**<br>
 Test Case:<br> 
-  - Verify free shipping for valid high-value orders
+    - Verify free shipping for valid high-value orders<br>
 Input:<br>
-  - Cart total = 50€
+    - Cart total = 50€<br>
 Expected Outcome:<br>
-  - Shipping = 0€
+    - Shipping = 0€<br>
 
-**5. Use Case Testing**
+**5. Use Case Testing**<br>
 Test Case:<br> 
-  - Verify dynamic update when adding products
+    - Verify dynamic update when adding products<br>
 Input:<br>
-  - Increase cart from 15€ => 25€
+    - Increase cart from 15€ => 25€<br>
 Expected Outcome:<br>
-  - Shipping changes from 5€ => 0€
+    - Shipping changes from 5€ => 0€<br>
 
-**6. Use Case Testing**
+**6. Use Case Testing**<br>
 Test Case: <br>
-  - Verify dynamic update when removing products
+    - Verify dynamic update when removing products<br>
 Input:<br>
-  - Decrease cart from 25€ → 15€
+    - Decrease cart from 25€ => 15€<br>
 Expected Outcome:<br>
-  - Shipping changes from 0€ → 5€
+    - Shipping changes from 0€ => 5€<br>
 
-**7. Error Guessing**
+**7. Error Guessing**<br>
 Test Case:<br> 
-  - Apply discount affecting threshold
+    - Apply discount affecting threshold<br>
 Input:<br>
-  - Cart = 25€, apply discount → 18€
+    - Cart = 25€, apply discount => 18€<br>
 Expected Outcome:<br>
-  - Shipping = 5€
+    - Shipping = 5€<br>
 
-**8. Use Case Testing**
+**8. Use Case Testing**<br>
 Test Case:<br> 
-  - Verify message for free shipping threshold
+    - Verify message for free shipping threshold<br>
 Input:<br>
-  - Cart total = 15€
+    - Cart total = 15€<br>
 Expected Outcome:<br>
-  - Message shows "Add 5€ more for free shipping"
+    - Message shows "Add 5€ more for free shipping"<br>
 
-**9. Error Guessing**
+**9. Error Guessing**<br>
 Test Case: <br>
-  - Empty cart scenario
+    - Empty cart scenario<br>
 Input:<br>
-  - No products in cart
+    - No products in cart<br>
 Expected Outcome:<br>
-  - No shipping cost displayed
+    - No shipping cost displayed<br>
 
 
