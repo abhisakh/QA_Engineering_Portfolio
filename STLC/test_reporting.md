@@ -10,13 +10,23 @@
 
 ---
 
+<a id="table"></a>
+## 📖 Table of Contents
+- [Test Case => <mark>  1. Product Rating System</mark>  => <mark>1. Use Case Testing</mark>](#test1_1)
+- [Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. Error Guessing</mark>](#test1_10)
+  - [Bug-001(#bug001)]
+- [Test Case => <mark>  3. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>](#test3_3)
+  - [Bug-003(#bug003)]
+- 
+
+---
 
 # 🧾 Test Report – Webshop New Features
 
 ---
-
+<a id ="test1_1"></a>
 ## Test Case => <mark>  1. Product Rating System</mark>  => <mark>1. Use Case Testing</mark>
-
+<-- [Back](#table)
 ## Scenario 1: Valid Product Rating Submission
 
 As a registered user who purchased a product, I can successfully submit a rating and review.
@@ -39,9 +49,9 @@ As a registered user who purchased a product, I can successfully submit a rating
 | <img width="1118" alt="Screenshot 1" src="https://github.com/user-attachments/assets/855e2a61-0e4f-4cd2-a37e-37da10a0d1c4" /> | <img width="1118" alt="Screenshot 2" src="https://github.com/user-attachments/assets/d5b9c279-a8ed-449c-a52c-ea0cc59d8a76" /> |
 
 ---
-
+<a id ="test1_10"></a>
 ## Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. Error Guessing</mark>
-
+<-- [Back](#table)
 ## Scenario 1: More 500 Character Submission During the Comment Editing
 As a registered and logged-in user who purchased a product, I can edit a review and post more than 500 character.
 
@@ -61,7 +71,9 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 
 ---
 
+<a id ="bug001"></a>
 ## 🐞 BUG-001: Review edit allows more than 500 characters
+<-- [Back](#table)
 
 ---
 
@@ -156,9 +168,9 @@ Screenshots / Attachments
 
 
 ---
-
-## Test Case => <mark>  1. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>
-
+<a id ="test3_3"></a>
+## Test Case => <mark>  3. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>
+<-- [Back](#table)
 ## Scenario 1: Invalid Product Rating Submission
 
 As a registered and logged-in user who purchased a product, I can not submit a review without rating.
@@ -211,9 +223,11 @@ Registered user who want to purchase a product can bypass the shipping fees.
 | 4     | Reduce total to 15€      | Cart updated          | OK     |           |               |
 | 5     | Check shipping           | Shipping should be 5€ | NOK  |           | #BUG-001      |
 
-
+<a id ="bug003"></a>
 ## 🐞 Bug Report
 ### BUG-001: Shipping cost not updated after cart value drops below threshold
+<-- [Back](#table)
+
 ---
 
 **Title**
