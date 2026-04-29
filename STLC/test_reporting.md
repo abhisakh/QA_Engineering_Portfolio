@@ -30,7 +30,11 @@ As a logged-in user who purchased a product, I can successfully submit a rating 
 | 6     | Click send                      | Review is saved and displayed | OK     |                    |               |
 
 
-## Scenario 2: Shipment Fee Dynamically Updated (Shipping fee not updated when cart value decreases below threshold)
+---
+
+## Test Case => <mark> 3. Shipping Cost Changes <mark>=> 5. Use Case Testing
+
+## Scenario 2: Shipment Fee Dynamically Updated (Shipping fee not updated when product value decreases below threshold 20 euro after adding producr value more than 20 euro.)
 
 Registered user who want to purchase a product can bypass the shipping fees.
 
