@@ -93,87 +93,166 @@ Input:
 Expected Outcome:
   - Error message displayed
 
-2. Age Verification for Alcoholic Products
-Test Design Techniques
+## 2. Age Verification for Alcoholic Products
 
-Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Error Guessing, Security Testing
+### Test Design Techniques
+  - Boundary Value Analysis (BVA)
+  - Equivalence Partitioning (EP)
+  - Use Case Testing
+  - Error Guessing
 
-Test Cases
-Use Case Testing
-Test Case: Verify modal appears when accessing alcoholic products
-Input: Navigate to alcoholic category
-Expected Outcome: Age verification modal is displayed
-Boundary Value Analysis
-Test Case: Verify access for user exactly 18 years old
-Input: DOB = Today - 18 years
-Expected Outcome: Access granted
-Boundary Value Analysis
-Test Case: Verify access for user just below 18
-Input: DOB = Today - 18 years + 1 day
-Expected Outcome: Access denied with error message
-Equivalence Partitioning
-Test Case: Verify access for valid adult users (>18)
-Input: DOB = Today - 25 years
-Expected Outcome: Access granted
-Equivalence Partitioning
-Test Case: Verify access for underage users (<18)
-Input: DOB = Today - 16 years
-Expected Outcome: Access denied
-Error Guessing
-Test Case: Submit empty input
-Input: No DOB entered
-Expected Outcome: Error message displayed
-Error Guessing
-Test Case: Enter invalid date format
-Input: "32-13-2020"
-Expected Outcome: Validation error
-Security Testing
-Test Case: Attempt to bypass modal
-Input: Direct URL access or skip input
-Expected Outcome: Access still restricted
-Use Case Testing
-Test Case: Verify session-based persistence
-Input: Verify once, navigate away and return
-Expected Outcome: Modal does not reappear during session
-3. Shipping Cost Changes
-Test Design Techniques
+### Test Cases
+**1. Use Case Testing**
+Test Case: 
+  - Verify modal appears when accessing alcoholic products
+Input:
+  - Navigate to alcoholic category
+Expected Outcome:
+  - Age verification modal is displayed
+    
+**2. Boundary Value Analysis**
+Test Case: 
+  - Verify access for user exactly 18 years old
+Input:
+  - DOB = Today - 18 years
+Expected Outcome:
+  - Access granted
+    
+**3. Boundary Value Analysis**
+Test Case: 
+  - Verify access for user just below 18
+Input:
+  - DOB = Today - 18 years + 1 day
+Expected Outcome:
+  - Access denied with error message
+    
+**4. Equivalence Partitioning**
+Test Case: 
+  - Verify access for valid adult users (>18)
+Input:
+  - DOB = Today - 25 years
+Expected Outcome:
+  - Access granted
+    
+**5. Equivalence Partitioning**
+Test Case: 
+  - Verify access for underage users (<18)
+Input:
+  - DOB = Today - 16 years
+Expected Outcome:
+  - Access denied
+    
+**6. Error Guessing**
+Test Case: 
+  - Submit empty input
+Input:
+  - No DOB entered
+Expected Outcome:
+  - Error message displayed
+    
+**7. Error Guessing**
+Test Case: 
+  - Enter invalid date format
+Input:
+  - "32-13-2020"
+Expected Outcome:
+  - Validation error
+    
+**8. Security Testing**
+Test Case: 
+  - Attempt to bypass modal
+Input:
+  - Direct URL access or skip input
+Expected Outcome:
+  - Access still restricted
+    
+**9. Use Case Testing**
+Test Case: 
+  - Verify session-based persistence
+Input:
+  - Verify once, navigate away and return
+Expected Outcome:
+  - Modal does not reappear during session
 
-Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Use Case Testing, Error Guessing
+## 3. Shipping Cost Changes
 
-Test Cases
-Boundary Value Analysis
-Test Case: Verify shipping cost at threshold (20€)
-Input: Cart total = 20€
-Expected Outcome: Shipping fee = 5€
-Boundary Value Analysis
-Test Case: Verify shipping cost just above threshold
-Input: Cart total = 20.01€
-Expected Outcome: Free shipping applied
-Boundary Value Analysis
-Test Case: Verify shipping cost just below threshold
-Input: Cart total = 19.99€
-Expected Outcome: Shipping fee = 5€
-Equivalence Partitioning
-Test Case: Verify free shipping for valid high-value orders
-Input: Cart total = 50€
-Expected Outcome: Shipping = 0€
-Use Case Testing
-Test Case: Verify dynamic update when adding products
-Input: Increase cart from 15€ → 25€
-Expected Outcome: Shipping changes from 5€ → 0€
-Use Case Testing
-Test Case: Verify dynamic update when removing products
-Input: Decrease cart from 25€ → 15€
-Expected Outcome: Shipping changes from 0€ → 5€
-Error Guessing
-Test Case: Apply discount affecting threshold
-Input: Cart = 25€, apply discount → 18€
-Expected Outcome: Shipping = 5€
-Use Case Testing
-Test Case: Verify message for free shipping threshold
-Input: Cart total = 15€
-Expected Outcome: Message shows "Add 5€ more for free shipping"
-Error Guessing
-Test Case: Empty cart scenario
-Input: No products in cart
-Expected Outcome: No shipping cost displayed
+### Test Design Techniques
+  - Boundary Value Analysis (BVA)
+  - Equivalence Partitioning (EP)
+  - Use Case Testing
+  - Error Guessing
+
+### Test Cases
+**1. Boundary Value Analysis**
+Test Case: 
+  - Verify shipping cost at threshold (20€)
+Input:
+  - Cart total = 20€
+Expected Outcome:
+  - Shipping fee = 5€
+    
+**2. Boundary Value Analysis**
+Test Case:
+  - Verify shipping cost just above threshold
+Input:
+  - Cart total = 20.01€
+Expected Outcome:
+  - Free shipping applied
+    
+**3. Boundary Value Analysis**
+Test Case: 
+  - Verify shipping cost just below threshold
+Input:
+  - Cart total = 19.99€
+Expected Outcome:
+  - Shipping fee = 5€
+
+**4. Equivalence Partitioning**
+Test Case: 
+  - Verify free shipping for valid high-value orders
+Input:
+  - Cart total = 50€
+Expected Outcome:
+  - Shipping = 0€
+
+**5. Use Case Testing**
+Test Case: 
+  - Verify dynamic update when adding products
+Input:
+  - Increase cart from 15€ => 25€
+Expected Outcome:
+  - Shipping changes from 5€ => 0€
+
+**6. Use Case Testing**
+Test Case: 
+  - Verify dynamic update when removing products
+Input:
+  - Decrease cart from 25€ → 15€
+Expected Outcome:
+  - Shipping changes from 0€ → 5€
+
+**7. Error Guessing**
+Test Case: 
+  - Apply discount affecting threshold
+Input:
+  - Cart = 25€, apply discount → 18€
+Expected Outcome:
+  - Shipping = 5€
+
+**8. Use Case Testing**
+Test Case: 
+  - Verify message for free shipping threshold
+Input:
+  - Cart total = 15€
+Expected Outcome:
+  - Message shows "Add 5€ more for free shipping"
+
+**9. Error Guessing**
+Test Case: 
+  - Empty cart scenario
+Input:
+  - No products in cart
+Expected Outcome:
+  - No shipping cost displayed
+
+
