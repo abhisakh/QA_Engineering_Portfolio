@@ -23,7 +23,7 @@
 ### Test Cases
 **1. Use Case Testing**<br>
 Test Case:<br>
-    - Verify that a user can submit a rating after purchasing a product<br>
+    - Verify that a user can submit a rating after purchasing a product <br>
 Input:<br>
     - Logged-in user with completed purchase submits 4⭐ rating<br>
 Expected Outcome:<br>
