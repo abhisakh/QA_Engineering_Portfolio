@@ -100,30 +100,34 @@ The webshop allows users to:
       - Invalid input acceptance
         
 **Expected Outcomes**
-Ratings are correctly created, edited, and displayed
-Age-restricted content is properly controlled
-Shipping cost updates accurately based on cart value
-No critical defects in core purchase flow
-4. Define Test Criteria
-Entry Criteria
-Requirements document finalized
-Test environment available
-Test data prepared
-Suspension Criteria
-Critical defects blocking:
-Checkout
-Product access
-Test environment unavailable
-Exit Criteria
-≥ 95% test cases executed
-≥ 90% pass rate
-No Critical (Severity 1) defects open
-No High (Severity 2) defects impacting:
-Checkout
-Age verification
-All major bugs retested and closed
-UAT sign-off completed
-5. Resource Planning
+  - Ratings are correctly created, edited, and displayed
+  - Age-restricted content is properly controlled
+  - Shipping cost updates accurately based on cart value
+  - No critical defects in core purchase flow
+    
+## 4. Define Test Criteria
+### Entry Criteria
+  - Requirements document finalized
+  - Test environment available
+  - Test data prepared
+  - 
+### Suspension Criteria
+  - Critical defects blocking:
+    - Checkout
+    - Product access
+  - Test environment unavailable
+    
+### Exit Criteria
+  - ≥ 95% test cases executed
+  - ≥ 90% pass rate
+  - No Critical (Severity 1) defects open
+  - No High (Severity 2) defects impacting:
+    - Checkout
+    - Age verification
+  - All major bugs retested and closed
+  - UAT sign-off completed
+    
+## 5. Resource Planning
 
 Human Resources:
 
