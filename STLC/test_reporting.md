@@ -304,13 +304,12 @@ Shipping cost remains 0€ even after total drops below 20€
 **Screenshots / Attachments**
 
 
-
-
-| Set 1 | Set 2 |
+| Screenshot 1 | Screenshot 2 |
 | :---: | :---: |
-| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com" /> |
-| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com" /> |
-| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com" /> |
+| <img width="500" src="https://github.com/user-attachments/assets/a5925e3b-e131-4887-ab5d-df36ed5bcbd2" /> | <img width="500" src="https://github.com/user-attachments/assets/e102ce92-3be6-4caa-a5b7-61b93efb868e" /> |
+| **Screenshot 3** | |
+| <img width="500" src="https://github.com/user-attachments/assets/0ea0f04e-bc59-489e-b09e-91a723f72402" /> | |
+
 
 
 ---
