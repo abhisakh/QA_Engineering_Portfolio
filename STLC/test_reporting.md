@@ -50,7 +50,7 @@ Registered user who want to purchase a product can bypass the shipping fees.
 | 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug 001      |
 
 ## 🐞 Bug Report
-### BUG-003: Shipping cost not updated after cart value drops below threshold
+### BUG-001: Shipping cost not updated after cart value drops below threshold
 ---
 
 **Title**
