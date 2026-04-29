@@ -47,8 +47,83 @@ Registered user who want to purchase a product can bypass the shipping fees.
 | 9     | Click on the Basket             | Redirected to checkout page | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
 | 10    | Check the shipment fee          | Should display 5 euro       | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
 | 11    | Increase the quantity to 23     | Shipment fee 0 euro         | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
-| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug              |
+| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug 001      |
 
+## 🐞 Bug Report
+### BUG-003: Shipping cost not updated after cart value drops below threshold
+---
+
+**Title**
+
+Shipping cost remains 0€ after cart total drops below 20€
+
+---
+
+**Priority**
+
+High
+
+---
+
+**Reporter**
+
+Abhisakh Sarma
+
+---
+
+**Date**
+
+29 April 2026
+
+---
+
+**Environment**
+
+TEST
+
+---
+
+**Application**
+
+[MarketMate Webshop](https://grocerymate.masterschool.com/auth)
+
+---
+
+**Page**
+
+/[checkout](https://grocerymate.masterschool.com/checkout)
+
+---
+
+**Browser / Operating System**
+
+Chrome 123 / MacOS
+
+---
+
+**Repro Steps**
+1. Open webshop
+2. Add product worth 25€ to cart
+3. Navigate to cart
+4. Verify shipping cost is 0€
+5. Remove product to reduce total below 20€
+6. Observe shipping cost
+
+---
+
+**Expected Result**
+
+Shipping cost should update to 5€ when cart total drops below 20€
+
+---
+
+**Actual Result**
+
+Shipping cost remains 0€ even after total drops below 20€
+
+---
+
+**Screenshots / Attachments**
 
 <img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 07 59" src="https://github.com/user-attachments/assets/a5925e3b-e131-4887-ab5d-df36ed5bcbd2" />
 
@@ -56,4 +131,19 @@ Registered user who want to purchase a product can bypass the shipping fees.
 <img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 06 56" src="https://github.com/user-attachments/assets/e102ce92-3be6-4caa-a5b7-61b93efb868e" />
 
 <img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 05 44" src="https://github.com/user-attachments/assets/0ea0f04e-bc59-489e-b09e-91a723f72402" />
+
+---
+
+
+**Additional Information**
+* **Issue gone after page refresh
+
+---
+
+
+
+
+
+
+
 
