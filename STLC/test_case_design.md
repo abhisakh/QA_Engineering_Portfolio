@@ -23,67 +23,67 @@
 ### Test Cases
 **1. Use Case Testing**
 Test Case:<br>
-  - Verify that a user can submit a rating after purchasing a product
+  - Verify that a user can submit a rating after purchasing a product<br>
 Input:<br>
-  - Logged-in user with completed purchase submits 4⭐ rating
+  - Logged-in user with completed purchase submits 4⭐ rating<br>
 Expected Outcome:<br>
-  - Rating is successfully saved and displayed
+  - Rating is successfully saved and displayed<br>
     
 **2. Equivalence Partitioning**
 Test Case:<br> 
-  - Verify rating submission for valid rating values (1–5)
+  - Verify rating submission for valid rating values (1–5)<br>
 Input:<br>
-  - Ratings = 1, 3, 5
+  - Ratings = 1, 3, 5 <br>
 Expected Outcome:<br>
-  - Ratings are accepted and displayed correctly
+  - Ratings are accepted and displayed correctly<br>
 
 **3. Boundary Value Analysis**
 Test Case: <br>
-  - Verify rating outside valid range
+  - Verify rating outside valid range<br>
 Input:<br>
-  - Rating = 0 or 6
+  - Rating = 0 or 6 <br>
 Expected Outcome:<br>
-  - Error message displayed, rating not accepted
+  - Error message displayed, rating not accepted<br>
     
 **4. Use Case Testing**
 Test Case: <br>
-  - Verify user can edit an existing rating
+  - Verify user can edit an existing rating<br>
 Input:<br>
-  - Change rating from 3⭐ to 5⭐
+  - Change rating from 3⭐ to 5⭐<br>
 Expected Outcome:<br>
-  - Rating is updated successfully
+  - Rating is updated successfully<br>
     
 **5. Use Case Testing**
 Test Case:<br> 
-  - Verify user can delete their rating
+  - Verify user can delete their rating<br>
 Input:<br>
-  - Delete submitted review
+  - Delete submitted review<br>
 Expected Outcome:<br>
-  - Rating is removed from product page
+  - Rating is removed from product page<br>
     
 **6. Equivalence Partitioning**
 Test Case:<br> 
-  - Verify feedback text within valid length
+  - Verify feedback text within valid length<br>
 Input:<br>
-  - Feedback = 100 characters
+  - Feedback = 100 characters<br>
 Expected Outcome:<br>
-  - Feedback is accepted and displayed
+  - Feedback is accepted and displayed<br>
     
 **7. Boundary Value Analysis**
 Test Case: <br>
-  - Verify feedback exceeding maximum length (500 chars)
+  - Verify feedback exceeding maximum length (500 chars)<br>
 Input:<br>
-  - Feedback = 501 characters
+  - Feedback = 501 characters<br>
 Expected Outcome:<br>
-  - Error message displayed
+  - Error message displayed<br>
 
 **8. Error Guessing**
 Test Case: <br>
-  - Submit rating without purchase
+  - Submit rating without purchase<br>
 Input:<br>
-  - User without purchase attempts rating
+  - User without purchase attempts rating<br>
 Expected Outcome:<br>
-  - Rating is rejected
+  - Rating is rejected<br>
 
 **9. Error Guessing**
 Test Case:<br> 
