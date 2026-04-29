@@ -57,8 +57,8 @@ The webshop includes the following core functionalities:
 4. Users can edit or delete their rating at any time.
 5. Users may optionally provide written feedback.
 6. Written feedback must:
-  - Have a minimum length of 1 character
-  - Have a maximum length of 500 characters
+  - - Have a minimum length of 1 character
+  - - Have a maximum length of 500 characters
 7. The average rating is displayed with one decimal precision (e.g., 4.3 ⭐).
 8. Ratings are displayed publicly on the product page.
 
