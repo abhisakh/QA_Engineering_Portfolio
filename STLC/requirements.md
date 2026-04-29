@@ -73,24 +73,27 @@ The webshop includes the following core functionalities:
 
 #### Questions
 
-1. What happens if the user enters an age below 18?
-2. Is the age verification required every time or only once per session/account?
-3. Can users bypass the modal by refreshing or using a direct link?
-4. What input format is accepted (number only, date of birth, etc.)?
-5. Is the entered age stored, and if so, how is user privacy handled?
-6. What happens if the user closes the modal without entering data?
+1. Should age verification persist across sessions or require repeated input?
+2. What happens if the user enters an invalid or underage value?
+3. Can users bypass the verification modal?
+4. What input format should be used (date of birth vs numeric age)?
+5. Is user age data stored, and how is privacy handled?
+6. What happens if the modal is closed without input?
 
 ---
 
 #### Detailed Requirements
 
-1. A **modal appears** when accessing alcoholic products. *** Underage Notice
-You are underage and cannot view alcohol products. Please wait until you are 18 or older to access these products.***
-2. Once the session memory is clear then we need to provide again the age information.
-3. You can easily provide any input value for the age data. 
-4. Users must enter their **age** (numeric input(DD-MM-YYYY))
-5. Verification **persists during the session**. Probablly the user data is stored inside the session state which is inside the clientside server.
-6. Modal **can be bypassed** by clicking the confirm button without providing the age data. But in that case the user will be counted as underage user.
+1. When a user navigates to the alcoholic products category, an age verification modal must appear.
+2. Users must enter their date of birth (format: DD-MM-YYYY).
+3. The system validates that the user is at least 18 years old.
+4. If the user is under 18:
+- - Access to alcoholic products is denied.
+- - The following message is displayed: <highlight>"You are underage and cannot view alcohol products."</highlight>
+If valid: <highlight>Alchoholic products are allowed.</highlight>
+5. Verification status is stored for the duration of the session only.
+-- After session expiration, verification must be repeated.
+6. The modal cannot be bypassed without valid input.
 
 ---
 
