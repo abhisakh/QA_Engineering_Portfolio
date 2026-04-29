@@ -51,7 +51,7 @@ The webshop includes the following core functionalities:
 
 #### Detailed Requirements
 
-1. Users can rate products from **1 to 5 stars**.(***need to be checked...***)
+1. Users can rate products from **1 to 5 stars**.The earlier rating from the same user can be edited.
 2. Each user can submit **only one rating** per product but only after purchase.
 3. Users can optionally add **written feedback** (1–500 characters).(***need to be checked...***)
 
