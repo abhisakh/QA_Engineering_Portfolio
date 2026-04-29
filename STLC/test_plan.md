@@ -7,9 +7,9 @@
 ### Objective
 The objective of this webshop is to provide users with a seamless online shopping experience, including product browsing, purchasing, and interaction features.
 The new features aim to: <br>
--- Enhance user engagement (Product Rating System) <br>
--- Ensure legal compliance (Age Verification for alcoholic products) <br>
--- Improve pricing transparency (Shipping Cost logic) <br>
+  - Enhance user engagement (Product Rating System) <br>
+  - Ensure legal compliance (Age Verification for alcoholic products) <br>
+  - Improve pricing transparency (Shipping Cost logic) <br>
 
 ### User Base
 The system is intended for: <br>
