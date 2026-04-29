@@ -40,7 +40,7 @@ As a registered user who purchased a product, I can successfully submit a rating
 
 ---
 
-## Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. 10. Error Guessing</mark>
+## Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. Error Guessing</mark>
 
 ## Scenario 1: More 500 Character Submission During the Comment Editing
 As a registered and logged-in user who purchased a product, I can edit a review and post more than 500 character.
@@ -55,7 +55,17 @@ As a registered and logged-in user who purchased a product, I can edit a review 
 | 6     | Click on a purchased product image(Loose Pears)    | Product detail page opens | OK   | [/product/123](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)|      |
 | 7a    | Select my earlier rating username = abhisakh_3    |             |        |                    |               |
 | 7b    | Click on the three dots which is located at the upper right corner   | Text is accepted              |        |                    |               |
-| 8     | Click send                      | Review is saved and displayed | OK     |                    |               |
+| 7c     | Pick the edit option            | Review panel will be displayed | OK     |                    |               |
+| 7d     | Insert 1000 character           | Text is accepted   | NOK     |                    |               |
+| 7e     |Click save changes           | Review posted | OK     |                    |               |
+
+
+| Screenshot A | Screenshot B |
+| :---: | :---: |
+| <img width="500" src="https://github.com/user-attachments/assets/8caa8825-2462-40d3-95dd-f9a234c3e7c7" /> | <img width="500" src="https://github.com/user-attachments/assets/60166eed-b15f-4ae8-a80f-76a20288f3a8" /> |
+| <img width="500" src="https://github.com/user-attachments/assets/92c1d48d-fb3a-4d44-9d3a-3cf3d1cc3f4b" /> | |
+
+
 
 
 
