@@ -303,12 +303,13 @@ Shipping cost remains 0€ even after total drops below 20€
 
 **Screenshots / Attachments**
 
-<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 07 59" src="https://github.com/user-attachments/assets/a5925e3b-e131-4887-ab5d-df36ed5bcbd2" />
 
+| Column A | Column B |
+| :---: | :---: |
+| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com" /> |
+| <img width="500" src="https://github.com" /> | <img width="500" src="https://github.com/user-attachments/assets/a5925e3b-e131-4887-ab5d-df36ed5bcbd2" /> |
+| <img width="500" src="https://github.com/user-attachments/assets/e102ce92-3be6-4caa-a5b7-61b93efb868e" /> | <img width="500" src="https://github.com/user-attachments/assets/0ea0f04e-bc59-489e-b09e-91a723f72402" /> |
 
-<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 06 56" src="https://github.com/user-attachments/assets/e102ce92-3be6-4caa-a5b7-61b93efb868e" />
-
-<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 05 44" src="https://github.com/user-attachments/assets/0ea0f04e-bc59-489e-b09e-91a723f72402" />
 
 ---
 
