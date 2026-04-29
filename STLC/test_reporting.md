@@ -38,6 +38,25 @@ As a registered user who purchased a product, I can successfully submit a rating
 | :---: | :---: |
 | <img width="1118" alt="Screenshot 1" src="https://github.com/user-attachments/assets/855e2a61-0e4f-4cd2-a37e-37da10a0d1c4" /> | <img width="1118" alt="Screenshot 2" src="https://github.com/user-attachments/assets/d5b9c279-a8ed-449c-a52c-ea0cc59d8a76" /> |
 
+---
+
+## Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. 10. Error Guessing</mark>
+
+## Scenario 1: More 500 Character Submission During the Comment Editing
+As a registered and logged-in user who purchased a product, I can edit a review and post more than 500 character.
+
+| Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
+| ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
+| 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
+| 2     | Log in with valid credentials   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
+| 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
+| 4     | Enter valid date of birth       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
+| 5     | Click on Confirm                | Date of birth page disappeared| OK     | [/store](https://grocerymate.masterschool.com/store)|             |
+| 6     | Click on a purchased product image(Loose Pears)    | Product detail page opens | OK   | [/product/123](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)|      |
+| 7a    | Select my earlier rating username = abhisakh_3    |             |        |                    |               |
+| 7b    | Click on the three dots which is located at the upper right corner   | Text is accepted              |        |                    |               |
+| 8     | Click send                      | Review is saved and displayed | OK     |                    |               |
+
 
 
 
