@@ -89,8 +89,8 @@ The webshop includes the following core functionalities:
 3. The system validates that the user is at least 18 years old.
 4. If the user is under 18:
 - - Access to alcoholic products is denied.
-- - The following message is displayed: <highlight>"You are underage and cannot view alcohol products."</highlight>
-If valid: <highlight>Alchoholic products are allowed.</highlight>
+- - The following message is displayed: <mark>"You are underage and cannot view alcohol products."</<mark>
+If valid: <<mark>Alchoholic products are allowed.</<mark>
 5. Verification status is stored for the duration of the session only.
 -- After session expiration, verification must be repeated.
 6. The modal cannot be bypassed without valid input.
