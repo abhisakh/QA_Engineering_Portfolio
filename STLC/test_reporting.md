@@ -1,4 +1,4 @@
-> 📋 [Home Task](https://masterschool.notion.site/Home-work-Requirements-08555225537749d6bbd8530cbdef6128) &nbsp;|&nbsp; 🌐 [Open MarketMate App](https://grocerymate.masterschool.com/)
+> 📋 [Home Task](https://masterschool.notion.site/Homework-environment-setup-test-execution-test-reporting-2a56bf0bf46c49448753c7a2b4618fe6) &nbsp;|&nbsp; 🌐 [Open MarketMate App](https://grocerymate.masterschool.com/)
 
 ---
 
