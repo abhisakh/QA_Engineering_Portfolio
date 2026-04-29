@@ -56,7 +56,7 @@ The webshop includes the following core functionalities:
 3. Users are allowed to rate a product only after purchasing it.
 4. Users can edit or delete their rating at any time.
 5. Users may optionally provide written feedback.
-6. Written feedback must:
+6. Written feedback must: 
 &nbsp;&nbsp; Have a minimum length of 1 character
 &nbsp;&nbsp; Have a maximum length of 500 characters
 7. The average rating is displayed with one decimal precision (e.g., 4.3 ⭐).
@@ -87,10 +87,10 @@ The webshop includes the following core functionalities:
 1. When a user navigates to the alcoholic products category, an age verification modal must appear.
 2. Users must enter their date of birth (format: DD-MM-YYYY).
 3. The system validates that the user is at least 18 years old.
-4. If the user is under 18:
-&nbsp;&nbsp; Access to alcoholic products is denied.
-&nbsp;&nbsp; The following message is displayed: <mark>"You are underage and cannot view alcohol products."</<mark>
-&nbsp;&nbsp;&nbsp;&nbsp; If valid: <<mark>Alchoholic products are allowed.</<mark>
+4. If the user is under 18:<br>
+&nbsp;&nbsp; Access to alcoholic products is denied.<br>
+&nbsp;&nbsp; The following message is displayed: <mark>"You are underage and cannot view alcohol products."</<mark><br>
+&nbsp;&nbsp;&nbsp;&nbsp; If valid: <<mark>Alchoholic products are allowed.</<mark><br>
 5. Verification status is stored for the duration of the session only.
 -- After session expiration, verification must be repeated.
 6. The modal cannot be bypassed without valid input.
