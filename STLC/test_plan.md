@@ -168,16 +168,14 @@ The webshop allows users to:
 | Security Testing |	19/05/2026 |	20/05/2026 |	TEST |	QA Team	| 16h |
 | UAT	21/05/2026 |	25/05/2026 |	ACC |	Users |	24h |
 | Final Fix & Retest |	26/05/2026 |	28/05/2026 |	TEST |	QA + Dev |	24h |
-| Release	30/05/2026 |	30/05/2026 |	PROD |	DevOps |	8h |
+| Release |	30/05/2026 |	30/05/2026 |	PROD |	DevOps |	8h |
 
 ## 8. Test Deliverables
-
 The following deliverables will be produced:
-
-Test Plan Document
-Test Cases & Test Scenarios
-Test Data Sets
-Bug/Defect Reports
-Test Execution Reports
-Regression Test Suite
-UAT Sign-off Document
+  - Test Plan Document
+  - Test Cases & Test Scenarios
+  - Test Data Sets
+  - Bug/Defect Reports
+  - Test Execution Reports
+  - Regression Test Suite
+  - UAT Sign-off Document
