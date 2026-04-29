@@ -222,11 +222,11 @@ Registered user who want to purchase a product can bypass the shipping fees.
 | 2     | Go to checkout           | Page displayed        | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
 | 3     | Verify shipping          | Shipping = 0€         | OK     |           |               |
 | 4     | Reduce total to 15€      | Cart updated          | OK     |           |               |
-| 5     | Check shipping           | Shipping should be 5€ | NOK  |           | #BUG-001      |
+| 5     | Check shipping           | Shipping should be 5€ | NOK  |           | #BUG-003      |
 
 <a id ="bug003"></a>
 ## 🐞 Bug Report
-### BUG-001: Shipping cost not updated after cart value drops below threshold
+### BUG-003: Shipping cost not updated after cart value drops below threshold
 <-- [Back](#table)
 
 ---
