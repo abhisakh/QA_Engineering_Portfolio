@@ -20,43 +20,78 @@
   - Use Case Testing
   - Error Guessing
 
-Test Cases
-Use Case Testing
-Test Case: Verify that a user can submit a rating after purchasing a product
-Input: Logged-in user with completed purchase submits 4⭐ rating
-Expected Outcome: Rating is successfully saved and displayed
-Equivalence Partitioning
-Test Case: Verify rating submission for valid rating values (1–5)
-Input: Ratings = 1, 3, 5
-Expected Outcome: Ratings are accepted and displayed correctly
-Boundary Value Analysis
-Test Case: Verify rating outside valid range
-Input: Rating = 0 or 6
-Expected Outcome: Error message displayed, rating not accepted
-Use Case Testing
-Test Case: Verify user can edit an existing rating
-Input: Change rating from 3⭐ to 5⭐
-Expected Outcome: Rating is updated successfully
-Use Case Testing
-Test Case: Verify user can delete their rating
-Input: Delete submitted review
-Expected Outcome: Rating is removed from product page
-Equivalence Partitioning
-Test Case: Verify feedback text within valid length
-Input: Feedback = 100 characters
-Expected Outcome: Feedback is accepted and displayed
-Boundary Value Analysis
-Test Case: Verify feedback exceeding maximum length (500 chars)
-Input: Feedback = 501 characters
-Expected Outcome: Error message displayed
-Error Guessing
-Test Case: Submit rating without purchase
-Input: User without purchase attempts rating
-Expected Outcome: Rating is rejected
-Error Guessing
-Test Case: Submit empty rating and empty feedback
-Input: No rating, no text
-Expected Outcome: Error message displayed
+### Test Cases
+**1. Use Case Testing**
+Test Case:
+  - Verify that a user can submit a rating after purchasing a product
+Input:
+  - Logged-in user with completed purchase submits 4⭐ rating
+Expected Outcome:
+  - Rating is successfully saved and displayed
+    
+**2. Equivalence Partitioning**
+Test Case: 
+  - Verify rating submission for valid rating values (1–5)
+Input:
+  - Ratings = 1, 3, 5
+Expected Outcome:
+  - Ratings are accepted and displayed correctly
+
+**3. Boundary Value Analysis**
+Test Case: 
+  - Verify rating outside valid range
+Input:
+  - Rating = 0 or 6
+Expected Outcome:
+  - Error message displayed, rating not accepted
+    
+**4. Use Case Testing**
+Test Case: 
+  - Verify user can edit an existing rating
+Input:
+  - Change rating from 3⭐ to 5⭐
+Expected Outcome:
+  - Rating is updated successfully
+    
+**5. Use Case Testing**
+Test Case: 
+  - Verify user can delete their rating
+Input:
+  - Delete submitted review
+Expected Outcome:
+  - Rating is removed from product page
+    
+**6. Equivalence Partitioning**
+Test Case: 
+  - Verify feedback text within valid length
+Input:
+  - Feedback = 100 characters
+Expected Outcome:
+  - Feedback is accepted and displayed
+    
+**7. Boundary Value Analysis**
+Test Case: 
+  - Verify feedback exceeding maximum length (500 chars)
+Input:
+  - Feedback = 501 characters
+Expected Outcome:
+  - Error message displayed
+
+**8. Error Guessing**
+Test Case: 
+  - Submit rating without purchase
+Input:
+  - User without purchase attempts rating
+Expected Outcome:
+  - Rating is rejected
+
+**9. Error Guessing**
+Test Case: 
+  - Submit empty rating and empty feedback
+Input:
+  - No rating, no text
+Expected Outcome:
+  - Error message displayed
 
 2. Age Verification for Alcoholic Products
 Test Design Techniques
