@@ -19,7 +19,7 @@ As a logged-in user who purchased a product, I can successfully submit a rating 
 
 | Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
 | ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
-| 1     | Go to webshop homepage          | Homepage is displayed         | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
+| 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
 | 2     | Log in with valid credentials   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
 | 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
 | 4     | Enter valid date of birth       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
@@ -28,3 +28,32 @@ As a logged-in user who purchased a product, I can successfully submit a rating 
 | 7a    | Select 4-star rating            | Rating is selected            |        |                    |               |
 | 7b    | Enter "Good quality product"    | Text is accepted              |        |                    |               |
 | 6     | Click send                      | Review is saved and displayed | OK     |                    |               |
+
+
+## Scenario 2: Shipment Fee Dynamically Updated (Shipping fee not updated when cart value decreases below threshold)
+
+Registered user who want to purchase a product can bypass the shipping fees.
+
+| Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
+| ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
+| 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
+| 2     | Log in with valid credentials   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
+| 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
+| 4     | Enter valid date of birth(29.04.2010)       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
+| 5     | Click on Confirm                | Date of birth page disappeared| OK     | [/store](https://grocerymate.masterschool.com/store)|             |
+| 6     | Navigate to Oranges             |                               | OK     |                                                     |      |
+| 7     | Check the quantity, make it 1   | quantity field is 1           | OK     |                    |               |
+| 8     | Click Add to cart               | Messege displayed "Item successfully added"|        |                    |               |
+| 9     | Click on the Basket             | Redirected to checkout page | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
+| 10    | Check the shipment fee          | Should display 5 euro       | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
+| 11    | Increase the quantity to 23     | Shipment fee 0 euro         | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
+| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug              |
+
+
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 07 59" src="https://github.com/user-attachments/assets/a5925e3b-e131-4887-ab5d-df36ed5bcbd2" />
+
+
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 06 56" src="https://github.com/user-attachments/assets/e102ce92-3be6-4caa-a5b7-61b93efb868e" />
+
+<img width="1118" height="853" alt="Screenshot 2026-04-29 at 16 05 44" src="https://github.com/user-attachments/assets/0ea0f04e-bc59-489e-b09e-91a723f72402" />
+
