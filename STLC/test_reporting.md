@@ -30,7 +30,7 @@
 <-- [Back](#table)
 ## Scenario 1: Valid Product Rating Submission
 
-As a registered user who purchased a product, I can successfully submit a rating and review.
+As a registered user who purchased a product(Loose Pears), I can successfully submit a rating and review. But I did not provided any comment
 
 | Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
 | ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
