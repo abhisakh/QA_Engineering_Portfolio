@@ -34,7 +34,7 @@
 
 **3. Boundary Value Analysis**
 * **Test Case:** Verify rating outside valid range
-* **Input:** Rating = 0 or 6
+* **Input:** Rating = 0 or 5
 * **Expected Outcome:** Error message displayed, rating not accepted
 
 **4. Use Case Testing**
