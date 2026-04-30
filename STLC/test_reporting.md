@@ -37,7 +37,7 @@ As a registered user who purchased a product, I can successfully submit a rating
 | 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
 | 2     | Log in with valid credentials(username:abhisakh_3 password: Abhi123)   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
 | 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
-| 4     | Enter valid date of birth       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
+| 4     | Enter valid date of birth(30.11.2000)       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
 | 5     | Click on Confirm                | Date of birth page disappeared| OK     | [/store](https://grocerymate.masterschool.com/store)|             |
 | 6     | Click on a purchased product image(Loose Pears)    | Product detail page opens | OK   | [/product/123](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)|      |
 | 7a    | Select 4-star rating            | Rating is selected            |        |                    |               |
