@@ -76,7 +76,7 @@ The webshop allows users to:
   - Boundary Value Testing – Age limits, price thresholds
   - Usability Testing – Modal behavior, rating UI
   - Security Testing – Age verification bypass, session handling
-  - Exploratory Testing – выявление unexpected issues
+  - Exploratory Testing – identified unexpected issues
 
 ### Risks and Issues
   - Age verification bypass (legal risk) => Mitigation: Strong validation + negative testing
