@@ -178,7 +178,7 @@ The webshop allows users to:
 | Functional Testing |	09/05/2026 |	15/05/2026 |	TEST |	QA Team |	48h |
 | Regression Testing |	16/05/2026 |	18/05/2026 |	TEST |	QA Team |	24h |
 | Security Testing |	19/05/2026 |	20/05/2026 |	TEST |	QA Team	| 16h |
-| UAT	21/05/2026 |	25/05/2026 |	ACC |	Users |	24h |
+| UAT	 | 21/05/2026 |	25/05/2026 |	ACC |	Users |	24h |
 | Final Fix & Retest |	26/05/2026 |	28/05/2026 |	TEST |	QA + Dev |	24h |
 | Release |	30/05/2026 |	30/05/2026 |	PROD |	DevOps |	8h |
 
