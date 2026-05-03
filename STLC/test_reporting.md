@@ -215,21 +215,21 @@ Quantity used: 20 units → Total = 20€
 
 Registered user who want to purchase a product can bypass the shipping fees.
 
-| Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
-| ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
-| 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
-| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123)   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
-| 3     | Navigate to Shop                | Date of birth page appeared   | OK     | [/auth](https://grocerymate.masterschool.com/store)|               |
-| 4     | Enter valid date of birth(29.04.2010)       | Confirm button activated      | OK     | [/store](https://grocerymate.masterschool.com/store)|             |
-| 5     | Click on Confirm                | Date of birth page disappeared| OK     | [/store](https://grocerymate.masterschool.com/store)|             |
-| 6     | Navigate to Oranges             |                               | OK     |                                                     |      |
-| 7     | Check the quantity, make it 1   | quantity field is 1           | OK     |                    |               |
-| 8     | Click Add to cart               | Messege displayed "Item successfully added"|        |                    |               |
-| 9     | Click on the Basket             | Redirected to checkout page | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
-| 10    | Check the shipment fee          | Should display 5 euro       | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
-| 11    | Increase the quantity to 23     | Shipment fee 0 euro         | OK     | [/checkout](https://grocerymate.masterschool.com/checkout)|               |
-| 12    | Decrease the quantity to 10     | Shipment fee remains 0 euro | NOK     | [/checkout](https://grocerymate.masterschool.com/checkout)| Bug-003      |
-
+| Step# | Action                                                                 | Expected outcome                                   | OK/NOK | URL                                                  | Link to issue |
+| ----- | ---------------------------------------------------------------------- | -------------------------------------------------- | ------ | ---------------------------------------------------- | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed                          | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in and redirected to home           | OK     | [/home](https://grocerymate.masterschool.com/)       |               |
+| 3     | Click on Shop in navigation bar                                        | Shop page loads                                    | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4     | Age verification modal appears                                         | DOB input field is displayed                       | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 5     | Enter valid date of birth (29.04.2000)                                 | Confirm button becomes active                      | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 6     | Click on Confirm                                                       | Age verification modal disappears                  | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 7     | Navigate to Oranges product page                                       | Product details page is displayed                  | OK     |                                                      |               |
+| 8     | Set quantity to 1                                                      | Quantity field updates to 1                        | OK     |                                                      |               |
+| 9     | Click Add to cart                                                      | Message displayed "Item successfully added"        | OK     |                                                      |               |
+| 10    | Click on the Basket                                                    | User is redirected to checkout page                | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+| 11    | Check the shipment fee                                                 | Shipping fee is 5€                                 | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+| 12    | Increase the quantity to 23                                            | Shipping fee updates to 0€                         | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+| 13    | Decrease the quantity to 10                                            | Shipping fee should update to 5€                   | NOK    | [/checkout](https://grocerymate.masterschool.com/checkout) | Bug-003       |
 
 | Screenshot 1 | Screenshot 2 |
 | :---: | :---: |
@@ -262,6 +262,7 @@ Total = 20.1€
 | 7     | Add 1 Large Flat Mushroom (1.1€)                                       | Cart subtotal = 20.1€                     | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
 | 8     | View cart summary                                                      | Shipping fee = 0€ (free shipping applied) | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
 
+<img width="400" alt="Screenshot 2026-05-03 at 18 20 04" src="https://github.com/user-attachments/assets/bc1f50f3-1b69-4cb4-b30e-924701260e1f" />
 
 
 
