@@ -28,7 +28,7 @@
 
 ---
 
-# 🧾 Test Report – Webshop New Features
+# 🧾 Test Report – MarketMate New Features
 
 ---
 <a id ="test1_1"></a>
