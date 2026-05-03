@@ -170,6 +170,10 @@ As a user, I should not be able to proceed without entering a valid date of birt
 | 5    | Leave DOB field empty                                                  | System should prevent submission and show validation error  | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
 | 6    | Click on Confirm                                                       | User is redirected and shown message: "You are underage..." | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
 
+| Screenshot A | Screenshot B |
+| :---: | :---: |
+| <img width="1118" src="https://github.com/user-attachments/assets/f29b1c4c-f350-49d8-a4a3-a20e739ecfad" /> | <img width="1118" src="https://github.com/user-attachments/assets/8c322538-bdc7-4819-8148-6c296429bf27" /> |
+
 
 ---
 
