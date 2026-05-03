@@ -180,23 +180,30 @@ As a user, I should not be able to proceed without entering a valid date of birt
 <a id ="test3_1"></a>
 ## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>1. Boundary Value Analysis (BVA)</mark>
 <-- [Back](#table)
-## Scenario 7: Verify Shipping Cost at Threshold Boundary (20€)
 
-Registered user should be charged shipping when cart total is exactly at the threshold value.
+## Scenario 7: Verify Free Shipping at Threshold Boundary (20€)
+
+Registered user should receive free shipping when cart total is exactly at the threshold value.
 
 ### Test Data Used:
-Kale (Fresh Vegetables) = 1€ each
+Kale (Fresh Vegetables) = 1€ each  
 Quantity used: 20 units → Total = 20€
 
-| Step# | Action                                                                 | Expected outcome          | OK/NOK | URL                                                  | Link to issue |
-| ----- | ---------------------------------------------------------------------- | ------------------------- | ------ | ---------------------------------------------------- | ------------- |
-| 1     | Go to webshop homepage                                                 | Login portal is displayed | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
-| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in         | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
-| 3     | Navigate to Shop                                                       | Shop page is displayed    | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
-| 4     | Enter valid date of birth (29.04.2000)                                 | DOB input accepted        | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
-| 5     | Click Confirm                                                          | DOB modal disappears      | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
-| 6     | Add 20 units of Kale (1€ each)                                         | Cart total = 20€          | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
-| 7     | View cart summary                                                      | Shipping fee = 5€ applied | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
+| Step# | Action                                                                 | Expected outcome                          | OK/NOK | URL                                                  | Link to issue |
+| ----- | ---------------------------------------------------------------------- | ----------------------------------------- | ------ | ---------------------------------------------------- | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed                 | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in and redirected to home  | OK     | [/home](https://grocerymate.masterschool.com/)       |               |
+| 3     | Click on Shop in navigation bar                                        | Shop page loads                           | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4     | Age verification modal appears                                         | DOB input field is displayed              | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 5     | Enter valid date of birth (29.04.2000)                                 | Confirm button becomes active             | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 6     | Click Confirm                                                          | DOB modal disappears                      | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 7     | Add 20 units of Kale (1€ each)                                         | Cart total = 20€                          | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
+| 8     | View cart summary                                                      | Shipping fee = 0€ (free shipping applied) | OK     | [/cart](https://grocerymate.masterschool.com/cart)   |               |
+
+| Screenshot 1 | Screenshot 2 |
+| :---: | :---: |
+| <img width="1118" src="https://github.com/user-attachments/assets/3f953606-5f4d-4e55-8072-35e6947d3c15" /> | <img width="1118" src="https://github.com/user-attachments/assets/c95d8773-6603-4bc9-8025-b2c5d092b2c0" />|
+
 
 
 ---
