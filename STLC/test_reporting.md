@@ -14,9 +14,15 @@
 ## 📖 Table of Contents
 - [Test Case => <mark>  1. Product Rating System</mark>  => <mark>1. Use Case Testing</mark>](#test1_1)
 - [Test Case => <mark>  1. Product Rating System</mark>  => <mark>10. Error Guessing</mark>](#test1_10)
-  - [Bug-001](#bug001)
 - [Test Case => <mark>  1. Product Rating System</mark>  => <mark> 3. Boundary Value Analysis</mark>](#test1_3)
+- [Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>1. Use Case Testing</mark>](#test2_1)
+- [Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>](#test2_2)
+- [Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>3. Error Guessing</mark>](#test2_3)
+- [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>1. Boundary Value Analysis (BVA)</mark>](#test3_1)
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>](#test3_5)
+- [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>](#test3_2)
+  - [Bug-001](#bug001)
+  - [Bug-002](#bug002)
   - [Bug-003](#bug003)
 - 
 
@@ -137,7 +143,6 @@ As a user who is exactly 18 years old, I should be granted access after completi
 ---
 
 <a id ="test2_3"></a>
-
 ## Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>3. Error Guessing</mark>
 <-- [Back](#table)
 ## Scenario 6: Submit Empty Date of Birth Input
@@ -154,7 +159,7 @@ As a user, I should not be able to proceed without entering a valid date of birt
 
 ---
 
-<a id ="test3_8"></a>
+<a id ="test3_1"></a>
 ## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>1. Boundary Value Analysis (BVA)</mark>
 <-- [Back](#table)
 ## Scenario 7: Verify Shipping Cost at Threshold Boundary (20€)
@@ -209,7 +214,7 @@ Registered user who want to purchase a product can bypass the shipping fees.
 
 ---
 
-<a id ="test3_9"></a>
+<a id ="test3_2"></a>
 ## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>
 <-- [Back](#table)
 
@@ -336,12 +341,12 @@ Screenshots / Attachments
 * Likely missing frontend or backend validation on update API
 
 ---
-
-## 🐞 Bug Report 
+<a id ="bug002"></a>
+## 🐞 BUG-002 System allows empty DOB submission 
+<-- [Back](#table)
 
 -- 
 
-Bug ID: BUG-002
 Title: System allows empty DOB submission and treats user as underage
 
 Description:
