@@ -144,9 +144,14 @@ As a user who is exactly 18 years old, I should be granted access after completi
 | 2    | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is redirected to homepage | OK     | [/home](https://grocerymate.masterschool.com/)               |               |
 | 3    | Click on **Shop** in navigation bar                                    | Shop page is opened            | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
 | 4    | Age verification modal appears                                         | DOB input field is displayed   | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
-| 5    | Enter DOB = Today - 18 years = 05-05-2018                                           | Confirm button becomes active  | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 5    | Enter DOB = Yesterday - 18 years = 02-05-2018                                           | Confirm button becomes active  | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
 | 6    | Click on Confirm                                                       | Modal disappears               | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
 | 7    | Navigate to Alcoholic category                                         | Alcoholic products are visible | OK     | [/store/alcohol](https://grocerymate.masterschool.com/store) |               |
+
+
+| Screenshot 1 | Screenshot 2 |
+| :---: | :---: |
+| <img width="1118" src="https://github.com/user-attachments/assets/be0d1ee5-606c-422f-924e-403921faafae" /> | <img width="1118" src="https://github.com/user-attachments/assets/de1fefd9-227c-4cf1-9b18-d95a86969b82" /> |
 
 ---
 
