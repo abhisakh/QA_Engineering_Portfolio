@@ -21,6 +21,7 @@
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>1. Boundary Value Analysis (BVA)</mark>](#test3_1)
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>](#test3_5)
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>](#test3_2)
+- [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>10. Error Guessing</mark>](#test3_10)
   - [Bug-001](#bug001)
   - [Bug-002](#bug002)
   - [Bug-003](#bug003)
@@ -264,6 +265,30 @@ Total = 20.1€
 
 <img width="400" alt="Screenshot 2026-05-03 at 18 20 04" src="https://github.com/user-attachments/assets/bc1f50f3-1b69-4cb4-b30e-924701260e1f" />
 
+---
+
+<a id ="test3_10"></a>
+## Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>10. Error Guessing</mark>
+<-- [Back](#table)
+
+## Scenario 10: Verify Shipping Cost for Empty Cart
+Registered user should not see any shipping cost when no products are added to the cart.
+
+### Test Data Used:
+No products added to cart
+
+| Step# | Action                                                                 | Expected outcome                                  | OK/NOK | URL                                                  | Link to issue |
+| ----- | ---------------------------------------------------------------------- | ------------------------------------------------- | ------ | ---------------------------------------------------- | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed                         | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in                                 | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 3     | Navigate to Shop                                                       | Shop page is displayed                            | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4     | Age verification modal appears                                         | DOB input field is displayed                      | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 5     | Enter valid date of birth (29.04.2000)                                 | Confirm button activated                          | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 6     | Click Confirm                                                          | DOB modal disappears                              | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 7     | Click on the Basket without adding any product                         | Cart/checkout page is displayed                   | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+| 8     | Observe shipping section                                               | No shipping cost is displayed                     | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
+
+<img width="400" height="837" alt="Screenshot 2026-05-03 at 18 26 33" src="https://github.com/user-attachments/assets/77449a0e-e61c-4bbb-9d6a-fd77e84b386f" />
 
 
 ---
