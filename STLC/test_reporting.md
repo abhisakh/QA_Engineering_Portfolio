@@ -176,7 +176,7 @@ Screenshots / Attachments
 
 As a registered and logged-in user who purchased a product, I can not submit a review without rating.
 
-| Step# | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
+| Step | Action                          | Expected outcome              | OK/NOK | URL                | Link to issue |
 | ----- | ------------------------------- | ----------------------------- | ------ | ------------------ | ------------- |
 | 1     | Go to webshop homepage          | Login portal is displayed     | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
 | 2     | Log in with valid credentials   | User is logged in             | OK     | [/auth](https://grocerymate.masterschool.com/auth)|               |
@@ -189,6 +189,90 @@ As a registered and logged-in user who purchased a product, I can not submit a r
 | 8     | Click send                      | "Invalid input for the field rating" | OK     |                    |               |
 
 <img width="650" height=auto alt="Screenshot 2026-04-29 at 18 09 04" src="https://github.com/user-attachments/assets/48dfa340-4057-4955-b091-6497f230eedc" />
+
+---
+
+<a id ="test2_1"></a>
+
+## Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>1. Use Case Testing</mark>
+<-- [Back](#table)
+## Scenario 1: Age Verification Modal Appears After Login
+
+As a registered user, I should see an age verification modal immediately after logging into the system.
+
+| Step | Action                                                                 | Expected outcome                             | OK/NOK | URL         | Link to issue |
+| ----- | ---------------------------------------------------------------------- | -------------------------------------------- | ------ | ----------- | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed                    | OK     | [/auth (https://grocerymate.masterschool.com/auth)   |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in                            | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 3     | System redirects after login                                           | Age verification modal appears automatically | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+
+
+---
+
+<a id ="test2_2"></a>
+
+## Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>
+<-- [Back](#table)
+## Scenario 2: Verify Access for User Exactly 18 Years Old
+As a user who is exactly 18 years old, I should be granted access after completing age verification.
+
+| Step  | Action                                                                 | Expected outcome               | OK/NOK | URL                                                          | Link to issue |
+| ----- | ---------------------------------------------------------------------- | ------------------------------ | ------ | ------------------------------------------------------------ | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed      | OK     | [/auth](https://grocerymate.masterschool.com/auth)           |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in              | OK     | [/auth](https://grocerymate.masterschool.com/auth)           |               |
+| 3     | Age verification modal appears                                         | DOB input field is displayed   | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 4     | Enter DOB = 03.05.2018                                          | Confirm button becomes active  | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 5     | Click on Confirm                                                       | Modal disappears               | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 6     | Navigate to Alcoholic category                                         | Alcoholic products are visible | OK     | [/store/alcohol](https://grocerymate.masterschool.com/store) |               |
+
+---
+
+<a id ="test2_3"></a>
+
+## Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>3. Error Guessing</mark>
+<-- [Back](#table)
+## Scenario 3: Submit Empty Date of Birth Input
+As a user, I should not be able to proceed without entering a valid date of birth.
+
+| Step | Action                                                                 | Expected outcome                                            | OK/NOK  | URL                                                  | Link to issue |
+| ----- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | ------- | ---------------------------------------------------- | ------------- |
+| 1     | Go to webshop homepage                                                 | Login portal is displayed                                   | OK      | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in                                           | OK      | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 3     | Age verification modal appears                                         | DOB input field is displayed                                | OK      | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4     | Leave DOB field empty                                                  | System should prevent submission and show validation error  | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
+| 5     | Click on Confirm                                                       | User is redirected and shown message: "You are underage..." | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
+
+## 🐞 Bug Report 
+
+-- 
+
+Bug ID: BUG-002
+Title: System allows empty DOB submission and treats user as underage
+
+Description:
+When the Date of Birth field is left empty and the user clicks "Confirm", the system does not block the action. Instead, it redirects the user and displays an "underage" message.
+
+Expected Behavior:
+
+DOB field should be mandatory
+User should not proceed without entering a valid date
+Proper validation error should be displayed
+
+Actual Behavior:
+
+Empty DOB is accepted
+User is treated as underage
+Redirect happens
+
+Severity: High
+Priority: High
+
+---
+
+
+
+---
+
 
 
 
