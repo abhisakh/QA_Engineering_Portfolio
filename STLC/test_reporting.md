@@ -288,7 +288,7 @@ No products added to cart
 | 7     | Click on the Basket without adding any product                         | Cart/checkout page is displayed                   | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
 | 8     | Observe shipping section                                               | No shipping cost is displayed                     | OK     | [/checkout](https://grocerymate.masterschool.com/checkout) |               |
 
-<img width="400" height="837" alt="Screenshot 2026-05-03 at 18 26 33" src="https://github.com/user-attachments/assets/77449a0e-e61c-4bbb-9d6a-fd77e84b386f" />
+<img width="400" alt="Screenshot 2026-05-03 at 18 26 33" src="https://github.com/user-attachments/assets/77449a0e-e61c-4bbb-9d6a-fd77e84b386f" />
 
 
 ---
