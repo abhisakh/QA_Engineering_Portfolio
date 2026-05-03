@@ -124,13 +124,11 @@ As a registered user, I should see an age verification modal when accessing the 
 
 | Screenshot 1 | Screenshot 2 |
 | :---: | :---: |
-| <img width="1118" src="https://github.com/user-attachments/assets/eb6edd20-57ce-4852-ad59-1dee65712fb9" />
-| <img width="1118" src="https://github.com/user-attachments/assets/9b9e9a11-f8d1-4610-9c38-788ea6bc8a00" />|
-| **Screenshot 3** | |
-| :---: | :---: |
-|<img width="1118" src="https://github.com/user-attachments/assets/0552cc40-a5dd-4a59-9661-61e61b8fb43d" />
-| |
+| <img width="1118" src="https://github.com/user-attachments/assets/eb6edd20-57ce-4852-ad59-1dee65712fb9" /> | <img width="1118" src="https://github.com/user-attachments/assets/9b9e9a11-f8d1-4610-9c38-788ea6bc8a00" /> |
 
+| Screenshot 3 |
+| :---: |
+| <img width="1118" src="https://github.com/user-attachments/assets/0552cc40-a5dd-4a59-9661-61e61b8fb43d" /> |
 ---
 
 <a id ="test2_2"></a>
