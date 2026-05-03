@@ -9,7 +9,7 @@
 </p>
 
 ---
-<img src="https://cdn-uploads.huggingface.co/production/uploads/noauth/EnXqHTws2zWEJuiNh54oL.webp" />
+
 # 🧪 Test Case Design – MarketMate New Features
 
 ## 1. Product Rating System
