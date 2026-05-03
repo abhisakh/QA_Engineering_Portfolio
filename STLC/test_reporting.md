@@ -111,16 +111,26 @@ As a registered and logged-in user who purchased a product, I can not submit a r
 
 ## Test Case => <mark> 2. Age Verification for Alcoholic Products</mark> => <mark>1. Use Case Testing</mark>
 <-- [Back](#table)
-## Scenario 4: Age Verification Modal Appears After Login
+## Scenario 4: Age Verification Modal Appears When Navigating to Shop
 
-As a registered user, I should see an age verification modal immediately after logging into the system.
+As a registered user, I should see an age verification modal when accessing the shop section.
 
-| Step | Action                                                                 | Expected outcome                             | OK/NOK | URL         | Link to issue |
-| ----- | ---------------------------------------------------------------------- | -------------------------------------------- | ------ | ----------- | ------------- |
-| 1     | Go to webshop homepage                                                 | Login portal is displayed                    | OK     | [/auth (https://grocerymate.masterschool.com/auth)   |               |
-| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in                            | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
-| 3     | System redirects after login                                           | Age verification modal appears automatically | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| Step | Action                                                                 | Expected outcome                             | OK/NOK | URL                                                  | Link to issue |
+| ---- | ---------------------------------------------------------------------- | -------------------------------------------- | ------ | ---------------------------------------------------- | ------------- |
+| 1    | Go to webshop homepage                                                 | Login portal is displayed                    | OK     | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2    | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in and redirected to homepage | OK     | [/home](https://grocerymate.masterschool.com/)       |               |
+| 3    | Click on **Shop** in navigation bar                                    | User is redirected to shop page              | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4    | System loads shop page                                                 | Age verification modal appears               | OK     | [/store](https://grocerymate.masterschool.com/store) |               |
 
+| Screenshot 1 | Screenshot 2 |
+| :---: | :---: |
+| <img width="1118" src="https://github.com/user-attachments/assets/eb6edd20-57ce-4852-ad59-1dee65712fb9" />
+
+ | <img width="1118" src="https://github.com/user-attachments/assets/9b9e9a11-f8d1-4610-9c38-788ea6bc8a00" />
+|
+| **Screenshot 3** | |
+|<img width="1118" src="https://github.com/user-attachments/assets/0552cc40-a5dd-4a59-9661-61e61b8fb43d" />
+| |
 
 ---
 
@@ -131,14 +141,15 @@ As a registered user, I should see an age verification modal immediately after l
 ## Scenario 5: Verify Access for User Exactly 18 Years Old
 As a user who is exactly 18 years old, I should be granted access after completing age verification.
 
-| Step  | Action                                                                 | Expected outcome               | OK/NOK | URL                                                          | Link to issue |
-| ----- | ---------------------------------------------------------------------- | ------------------------------ | ------ | ------------------------------------------------------------ | ------------- |
-| 1     | Go to webshop homepage                                                 | Login portal is displayed      | OK     | [/auth](https://grocerymate.masterschool.com/auth)           |               |
-| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in              | OK     | [/auth](https://grocerymate.masterschool.com/auth)           |               |
-| 3     | Age verification modal appears                                         | DOB input field is displayed   | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
-| 4     | Enter DOB = 03.05.2018                                          | Confirm button becomes active  | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
-| 5     | Click on Confirm                                                       | Modal disappears               | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
-| 6     | Navigate to Alcoholic category                                         | Alcoholic products are visible | OK     | [/store/alcohol](https://grocerymate.masterschool.com/store) |               |
+| Step | Action                                                                 | Expected outcome               | OK/NOK | URL                                                          | Link to issue |
+| ---- | ---------------------------------------------------------------------- | ------------------------------ | ------ | ------------------------------------------------------------ | ------------- |
+| 1    | Go to webshop homepage                                                 | Login portal is displayed      | OK     | [/auth](https://grocerymate.masterschool.com/auth)           |               |
+| 2    | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is redirected to homepage | OK     | [/home](https://grocerymate.masterschool.com/)               |               |
+| 3    | Click on **Shop** in navigation bar                                    | Shop page is opened            | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 4    | Age verification modal appears                                         | DOB input field is displayed   | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 5    | Enter DOB = Today - 18 years = 05-05-2018                                           | Confirm button becomes active  | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 6    | Click on Confirm                                                       | Modal disappears               | OK     | [/store](https://grocerymate.masterschool.com/store)         |               |
+| 7    | Navigate to Alcoholic category                                         | Alcoholic products are visible | OK     | [/store/alcohol](https://grocerymate.masterschool.com/store) |               |
 
 ---
 
@@ -149,12 +160,13 @@ As a user who is exactly 18 years old, I should be granted access after completi
 As a user, I should not be able to proceed without entering a valid date of birth.
 
 | Step | Action                                                                 | Expected outcome                                            | OK/NOK  | URL                                                  | Link to issue |
-| ----- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | ------- | ---------------------------------------------------- | ------------- |
-| 1     | Go to webshop homepage                                                 | Login portal is displayed                                   | OK      | [/auth](https://grocerymate.masterschool.com/auth)   |               |
-| 2     | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in                                           | OK      | [/auth](https://grocerymate.masterschool.com/auth)   |               |
-| 3     | Age verification modal appears                                         | DOB input field is displayed                                | OK      | [/store](https://grocerymate.masterschool.com/store) |               |
-| 4     | Leave DOB field empty                                                  | System should prevent submission and show validation error  | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
-| 5     | Click on Confirm                                                       | User is redirected and shown message: "You are underage..." | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
+| ---- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | ------- | ---------------------------------------------------- | ------------- |
+| 1    | Go to webshop homepage                                                 | Login portal is displayed                                   | OK      | [/auth](https://grocerymate.masterschool.com/auth)   |               |
+| 2    | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is redirected to homepage                              | OK      | [/home](https://grocerymate.masterschool.com/)       |               |
+| 3    | Click on **Shop** in navigation bar                                    | Shop page is opened                                         | OK      | [/store](https://grocerymate.masterschool.com/store) |               |
+| 4    | Age verification modal appears                                         | DOB input field is displayed                                | OK      | [/store](https://grocerymate.masterschool.com/store) |               |
+| 5    | Leave DOB field empty                                                  | System should prevent submission and show validation error  | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
+| 6    | Click on Confirm                                                       | User is redirected and shown message: "You are underage..." | **NOK** | [/store](https://grocerymate.masterschool.com/store) | [BUG-002]     |
 
 
 ---
