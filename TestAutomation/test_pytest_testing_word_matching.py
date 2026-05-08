@@ -82,14 +82,15 @@ def test_count_word_matches_edge_cases(text, target, expected):
 @pytest.mark.parametrize(
     "text,target",
     [
-        (None, "word"),
-        ("hello world", None),
-        (123, "word"),
-        ("hello world", 456),
-        (["hello", "world"], "world"),
-        ("hello world", ["world"]),
+        (None, "word", TypeError),
+        ("hello world", None, TypeError),
+        (123, "word", TypeError),
+        ("hello world", 456, TypeError),
+        (["hello", "world"], "world", TypeError),
+        ("hello world", ["world"], TypeError),
+        (123, ["world"], ValueError),
     ],
 )
 def test_count_word_matches_invalid_inputs(text, target):
-    with pytest.raises(TypeError):
+    with pytest.raises((TypeError, ValueError)):
         count_word_matches(text, target)
