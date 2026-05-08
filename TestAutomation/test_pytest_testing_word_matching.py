@@ -80,7 +80,7 @@ def test_count_word_matches_edge_cases(text, target, expected):
 # 6. **List Target**: `text="hello world", target=["world"]` → Expect a `TypeError`.
 #-------------------------------------------------------------------------------------------------
 @pytest.mark.parametrize(
-    "text,target",
+    ("text,target,expected"),
     [
         (None, "word", TypeError),
         ("hello world", None, TypeError),
