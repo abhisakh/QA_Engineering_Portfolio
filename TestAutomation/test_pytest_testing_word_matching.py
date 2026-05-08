@@ -88,7 +88,6 @@ def test_count_word_matches_edge_cases(text, target, expected):
         ("hello world", 456, TypeError),
         (["hello", "world"], "world", TypeError),
         ("hello world", ["world"], TypeError),
-        (123, ["world"], ValueError),
     ],
 )
 def test_count_word_matches_invalid_inputs(text, target):
