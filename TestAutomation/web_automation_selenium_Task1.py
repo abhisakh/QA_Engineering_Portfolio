@@ -23,73 +23,92 @@
 #     - Assert that the product name is displayed on the page.
 
 #======================== TASK-1 ==========================
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.remote.webelement import WebElement
 
 URL = "https://www.saucedemo.com/"
 
-def get_driver(url=URL) -> webdriver.Chrome:
+
+def get_driver() -> webdriver.Chrome:
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.get(url)
+    driver.get(URL)
     return driver
 
-driver = get_driver()
 
-wait = WebDriverWait(driver, 10)
+def test_login_and_verify_product():
 
-def test_login_page() -> bool:
-    """Verifies that the landing page logo is rendered correctly."""
-    logo: WebElement = wait.until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, ".login_logo"))
-    )
-    print(f"Landing Page Logo: {logo.text}")
-    return logo.text == "Swag Labs"
+    driver = get_driver()
+    wait = WebDriverWait(driver, 10)
 
-def test_login() -> bool:
-    """Automates user login credentials and verifies redirection."""
-    username: WebElement = wait.until(EC.element_to_be_clickable((By.ID, "user-name")))
-    username.send_keys("standard_user")
-
-    password: WebElement = wait.until(EC.element_to_be_clickable((By.ID, "password")))
-    password.send_keys("secret_sauce")
-
-    button: WebElement = wait.until(EC.element_to_be_clickable((By.ID, "login-button")))
-    button.click()
-
-    # Verification
-    page_title: WebElement = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".title")))
-    print(f"Dashboard Title: {page_title.text}")
-    return page_title.text == "Products"
-
-def test_present_specific_product() -> bool:
-    """Finds and verifies the explicit presence of the required backpack item."""
     try:
-        if test_login_page() and test_login():
-            wait.until(EC.presence_of_element_located((By.CLASS_NAME, "inventory_item_name")))
-            products: list[WebElement] = driver.find_elements(By.CLASS_NAME, "inventory_item_name")
-            time.sleep(2)
+        # =====================================================
+        # Verify Landing Page
+        # =====================================================
 
-            product_names = [item.text for item in products]
-            print(f"Discovered items on page: {product_names}")
-            time.sleep(2)
+        logo: WebElement = wait.until(
+            EC.visibility_of_element_located((By.CLASS_NAME, "login_logo"))
+        )
 
-            is_backpack_present = "Sauce Labs Backpack" in product_names
-            print(f"Is 'Sauce Labs Backpack' visible? -> {is_backpack_present}")
-            time.sleep(2)
+        assert logo.text == "Swag Labs"
+        print("Login page loaded successfully")
 
-            assert is_backpack_present, "Target product 'Sauce Labs Backpack' was missing from the UI."
-            return is_backpack_present
+        # =====================================================
+        # Login
+        # =====================================================
 
-        return False
+        username: WebElement = wait.until(
+            EC.element_to_be_clickable((By.ID, "user-name"))
+        )
+        username.send_keys("standard_user")
+
+        password: WebElement = wait.until(
+            EC.element_to_be_clickable((By.ID, "password"))
+        )
+        password.send_keys("secret_sauce")
+
+        login_button: WebElement = wait.until(
+            EC.element_to_be_clickable((By.ID, "login-button"))
+        )
+        login_button.click()
+
+        # =====================================================
+        # Verify Successful Login
+        # =====================================================
+
+        title: WebElement = wait.until(
+            EC.visibility_of_element_located((By.CLASS_NAME, "title"))
+        )
+
+        assert title.text == "Products"
+        print("Login successful")
+
+        # =====================================================
+        # Verify Product Presence
+        # =====================================================
+
+        products = wait.until(
+            EC.presence_of_all_elements_located(
+                (By.CLASS_NAME, "inventory_item_name")
+            )
+        )
+
+        product_names = [product.text for product in products]
+
+        print("Available Products:")
+        for item in product_names:
+            print(item)
+
+        assert "Sauce Labs Backpack" in product_names
+        print("Sauce Labs Backpack found")
 
     finally:
-        print("Terminating automation browser thread session...")
+        print("Closing browser...")
         driver.quit()
 
+
 if __name__ == "__main__":
-    test_present_specific_product()
+    test_login_and_verify_product()
