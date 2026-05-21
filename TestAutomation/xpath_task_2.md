@@ -1,4 +1,4 @@
-## Task 2
+## [Task 2](https://masterschool.notion.site/Homework-XPath-6c4229bd4ea1461a941010bbeb35365f)
 
 Go the https://grocerymate.masterschool.com
 
