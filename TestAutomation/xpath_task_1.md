@@ -1,4 +1,4 @@
-## Task 1
+## [Task 1](https://masterschool.notion.site/Homework-XPath-6c4229bd4ea1461a941010bbeb35365f)
 
 In this task you are required to write XPaths based on the given HTML document. Carefully go through the HTML document. You can also copy/paste the HTML locally to view the webpage.
 
