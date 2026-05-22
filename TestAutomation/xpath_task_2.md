@@ -13,7 +13,8 @@ Go the https://grocerymate.masterschool.com
 
 2. Now, open https://grocerymate.masterschool.com/auth.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/cc352327-dcdd-485b-af91-87626247bbd9/image.png)
+<img width="1541" height="765" alt="image" src="https://github.com/user-attachments/assets/e7b50a80-0e45-4dd2-97aa-5e322f0f1e4a" />
+
 
 Write the XPath of all input fields (Email address, Password), sign in button, Create a new account link, and Go to Home link
 #### email
@@ -43,7 +44,8 @@ Write the XPath of all input fields (Email address, Password), sign in button, C
 
 3. Now, on the same link as in Part 2, click on Create a new account, you will see the following UI:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1e193326-679b-4739-96c8-36af2dc7c43e/image.png)
+<img width="1386" height="761" alt="image" src="https://github.com/user-attachments/assets/fa6f4e44-ace5-411c-8c86-a516cef0e8b3" />
+
 
 Write the XPath for all input fields (Full Name, Email address, Password), Sign Up button.
 #### Full Name
@@ -69,7 +71,8 @@ Write the XPath for all input fields (Full Name, Email address, Password), Sign 
 
 4. Go to https://grocerymate.masterschool.com/store, you will see the following UI:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/29c80beb-9478-4c6c-9ed0-104fe48162ad/image.png)
+<img width="1915" height="974" alt="image" src="https://github.com/user-attachments/assets/ab569beb-4314-4bd8-95b4-e40542e5c2f7" />
+
 
 #### Write the XPath of **Confirm** button which you can see in the Modal.
     ```python
