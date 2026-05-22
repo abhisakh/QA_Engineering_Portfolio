@@ -80,17 +80,17 @@ Write the XPath for all input fields (Full Name, Email address, Password), Sign 
     ```
 
 5. Go to the **Shop** page, write the XPath for:
-    -- 1. Quantity input of Oranges
+    1. Quantity input of Oranges
     ```python
     //p[text()='Oranges']/ancestor::div[@class='card']//input[@class='quantity']
     ````
 
-    -- 2. Add to cart button for Oranges
+    2. Add to cart button for Oranges
     ```python
     //p[text()='Oranges']/ancestor::div[@class='card']//button[text()='Add to Cart']
     ```
 
-    -- 3. Add to wish list for Oranges
+    3. Add to wish list for Oranges
     ```python
     //p[text()='Oranges']/ancestor::div[@class='card']//button[contains(., '❤')]
     ```
