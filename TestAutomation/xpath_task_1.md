@@ -86,79 +86,79 @@ Here is the given HTML:
 </body>
 </html>
 ```
-- 1. Write the XPath to locate the main **h1** element.
+1. Write the XPath to locate the main **h1** element.
 ```python
 //h1[@id='mainTitle']
 
 ```
-- 2. Write the XPath to select the **About Us** navigational link.
+2. Write the XPath to select the **About Us** navigational link.
 ```python
 //a[@href="#about"]
 
 ```
-- 3. Write the XPath to select the **Graphic Design** dropdown link.
+3. Write the XPath to select the **Graphic Design** dropdown link.
 ```python
 //ul[@class='dropdown']/li/a[@href='#graphicdesign']
 
 ```
-- 4. Write the XPath to select the team member’s name **Jane Smith**.
+4. Write the XPath to select the team member’s name **Jane Smith**.
 ```python
 //h4[text()="Jane Smith"]
 
 ```
-- 5. Write the XPath to select the description (which is inside the paragraph) of **SEO Services**.
+5. Write the XPath to select the description (which is inside the paragraph) of **SEO Services**.
 ```python
 //div[h3="SEO Services"]/p
 
 ```
-- 6. Write an XPath expression to select all service items in the "**Our Services**" section.
+6. Write an XPath expression to select all service items in the "**Our Services**" section.
 ```python
 //section[@id="services"]//div[@class="service-item"]
 
 ```
-- 7. What is the XPath to select the **email input field** in the contact form?
+7. What is the XPath to select the **email input field** in the contact form?
 ```python
 //form[@id='contactForm']//input[@type='email']
 
 ```
-- 8. How would you write an XPath to select the **entire contact form**?
+8. How would you write an XPath to select the **entire contact form**?
 ```python
 //form[@id="contactForm"]
 
 ```
-- 9. Provide the XPath to select the **footer paragraph element**.
+9. Provide the XPath to select the **footer paragraph element**.
 ```python
 //footer/p
 
 ```
-- 10. What is the XPath to select the **first team member**'s (`<h4>`) name?
+10. What is the XPath to select the **first team member**'s (`<h4>`) name?
 ```python
 //div[@class="team"]//li[1]/h4
 or
 //div[@class='team']/ul/li[1]/h4
 
 ```
-- 11. How can you select the description of the **second service** item using XPath?
+11. How can you select the description of the **second service** item using XPath?
 ```python
 //div[@class="service-item"][2]/p
 
 ```
-- 12. What is the XPath to select the "Contact Us" section header (`<h2>` element)?
+12. What is the XPath to select the "Contact Us" section header (`<h2>` element)?
 ```python
 //section[@id='contact']/h2
 
 ```
-- 13. Write an XPath expression to select all links within the dropdown under the "Services" navigation item.
+13. Write an XPath expression to select all links within the dropdown under the "Services" navigation item.
 ```python
 //ul[@class='dropdown']/li/a
 
 ```
-- 14. What is the XPath to select the first `<li>` under the "Our Team" section?
+14. What is the XPath to select the first `<li>` under the "Our Team" section?
 ```python
 //div[@class='team']/ul/li[1]
 
 ```
-- 15. Provide the XPath to locate the "Send Message" button in the contact form.
+15. Provide the XPath to locate the "Send Message" button in the contact form.
 ```python
 //input[@type='submit' and @value='Send Message']
 
