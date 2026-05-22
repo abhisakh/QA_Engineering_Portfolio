@@ -4,8 +4,8 @@ Go the https://grocerymate.masterschool.com
 
 1. Write the XPath for the highlighted icon/button given in the image below.
 
+<img width="1897" height="101" alt="image" src="https://github.com/user-attachments/assets/e65f91fe-f6ee-44cc-90dd-682d7ed3bd07" />
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/38f4acec-5e04-4646-8f54-5edd021120da/image.png)
 
 ```python
 //div[@class='social-icon-cont']/div[1]
