@@ -22,9 +22,11 @@
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>5. Use Case Testing</mark>](#test3_5)
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>2. Boundary Value Analysis (BVA)</mark>](#test3_2)
 - [Test Case => <mark> 3. Shipping Cost Changes</mark> => <mark>10. Error Guessing</mark>](#test3_10)
+- [New Test Case <mark> User review is not visible </mark> => <mark> Error Guessing</mark>](#test1_4)
   - [Bug-001](#bug001)
   - [Bug-002](#bug002)
   - [Bug-003](#bug003)
+  - [Bug-004](#bug004)
 - 
 
 ---
@@ -290,6 +292,51 @@ No products added to cart
 
 <img width="400" alt="Screenshot 2026-05-03 at 18 26 33" src="https://github.com/user-attachments/assets/77449a0e-e61c-4bbb-9d6a-fd77e84b386f" />
 
+---
+
+---
+<a id ="test1_4"></a>
+## Test Case => <mark> 4. Product Review System</mark> => <mark>1. Use Case Testing</mark>
+
+<-- [Back](#table)
+
+## Scenario 1: Review Submitted Successfully but Not Displayed
+
+As a registered user who purchased a product (Ginger), I can submit a review successfully, but the submitted review is not visible in the Reviews section.
+
+| Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
+| ----- | ------ | ---------------- | ------ | --- | ------------- |
+| 1 | Go to webshop homepage | Login portal is displayed | OK | [/auth](https://grocerymate.masterschool.com/auth) | |
+| 2 | Log in with valid credentials (username: abhisakh_3 password: Abhi123) | User is logged in | OK | [/auth](https://grocerymate.masterschool.com/auth) | |
+| 3 | Navigate to Shop | Date of birth page appeared | OK | [/store](https://grocerymate.masterschool.com/store) | |
+| 4 | Enter valid date of birth (30.11.2000) | Confirm button activated | OK | [/store](https://grocerymate.masterschool.com/store) | |
+| 5 | Click on Confirm | Date of birth page disappeared | OK | [/store](https://grocerymate.masterschool.com/store) | |
+| 6 | Click on a purchased product image (Ginger) | Product detail page opens | OK | [/product](https://grocerymate.masterschool.com/product/) | |
+| 7a | Select 5-star rating | Rating is selected | OK | | |
+| 7b | Enter review text "Fresh ginger with good quality." | Text is accepted | OK | | |
+| 8 | Click Send | Review is saved and displayed in Reviews section | NOK | | BUG-004 |
+
+### Result
+
+**Actual Result:**  
+The review submission is successful, but the newly added review is not displayed in the Reviews section.
+
+**Expected Result:**  
+The submitted review should be displayed immediately in the Reviews section after successful submission.
+
+### Screenshots / Attachments
+
+| Image 1 | Image 2 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 23 26" src="https://github.com/user-attachments/assets/21f35e95-156e-4c08-88a9-f7aba0cea034" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 23 41" src="https://github.com/user-attachments/assets/aa4441ab-c804-4a4e-8f58-0768b3de7983" /> |
+
+| Image 3 | Image 4 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 24 28" src="https://github.com/user-attachments/assets/3cfdee92-79b0-4616-9025-59905c3fd8ae" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 25 11" src="https://github.com/user-attachments/assets/0d9732af-e58b-4185-a5a8-775d3d68edc9" /> |
+
+| Image 5 | Image 6 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 25 54" src="https://github.com/user-attachments/assets/44d90949-1ae3-41a2-bb9a-b34b4497930a" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 26 09" src="https://github.com/user-attachments/assets/679795fe-d250-4c10-af3a-a087f6d781d4" /> |
 
 ---
 
@@ -510,4 +557,112 @@ Shipping cost remains 0€ even after total drops below 20€
 
 **Additional Information**
 * Shipping cart value resets only after page refresh.
+
+
+<a id ="bug004"></a>
+## 🐞 Bug Report
+### BUG-004: Submitted review not visible in product reviews section
+<-- [Back](#table)
+
+---
+
+**Title**
+
+Review is submitted successfully but not displayed in the Reviews section for Ginger product
+
+---
+
+**Priority**
+
+High
+
+---
+
+**Reporter**
+
+Abhisakh Sarma
+
+---
+
+**Date**
+
+01 June 2026
+
+---
+
+**Environment**
+
+TEST
+
+---
+
+**Application**
+
+[MarketMate Webshop](https://grocerymate.masterschool.com/auth)
+
+---
+
+**Page**
+
+/[product](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)
+
+---
+
+**Product**
+
+Ginger
+
+---
+
+**Browser / Operating System**
+
+Chrome 123 / MacOS
+
+---
+
+**Repro Steps**
+1. Open webshop
+2. Log in with valid credentials (username: abhisakh_3 / password: Abhi123)
+3. Navigate to Shop
+4. Complete age verification with valid DOB
+5. Open product "Ginger"
+6. Scroll to Reviews section
+7. Add a valid review comment
+8. Click Submit
+9. Observe Reviews section after submission
+
+---
+
+**Expected Result**
+
+The newly submitted review should be immediately visible in the Reviews section without requiring refresh or additional actions.
+
+---
+
+**Actual Result**
+
+The review is submitted successfully but does not appear in the Reviews section.
+
+---
+
+**Screenshots / Attachments**
+
+| Image 1 | Image 2 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 23 26" src="https://github.com/user-attachments/assets/21f35e95-156e-4c08-88a9-f7aba0cea034" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 23 41" src="https://github.com/user-attachments/assets/aa4441ab-c804-4a4e-8f58-0768b3de7983" /> |
+
+| Image 3 | Image 4 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 24 28" src="https://github.com/user-attachments/assets/3cfdee92-79b0-4616-9025-59905c3fd8ae" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 25 11" src="https://github.com/user-attachments/assets/0d9732af-e58b-4185-a5a8-775d3d68edc9" /> |
+
+| Image 5 | Image 6 |
+| :---: | :---: |
+| <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 25 54" src="https://github.com/user-attachments/assets/44d90949-1ae3-41a2-bb9a-b34b4497930a" /> | <img width="1371" height="866" alt="Screenshot 2026-06-01 at 11 26 09" src="https://github.com/user-attachments/assets/679795fe-d250-4c10-af3a-a087f6d781d4" /> |
+
+---
+
+**Additional Information**
+* Review submission API returns success response.
+* UI does not refresh or re-fetch updated reviews list.
+* Issue may be related to frontend state update or missing API refresh call.
 
